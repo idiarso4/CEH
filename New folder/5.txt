@@ -1,0 +1,1835 @@
+Memahami Pengertian dan konsep ethical Hacking
+5.2	Menjelaskan jenis-jenis kegiatan ethical Hacking
+5.3	Menjelaskan dan manfaat dari kegiatan ethical Hacking
+5.4	Menginstal system operasi linux untuk kegiatan Hacking
+5.5	Melakukan pengujian untuk mencari kelebihan dan kekurangan dari berbagai system operasi dalam kegiatan hacking
+5.6	Memahami konsep dari footprinting.
+5.7	Memahami jenis-jenis footprinting.
+5.8	Memahami proses footprinting dalam pengumpulan informasi
+5.9	Menerapkan prosedur footprinting dengan cara mengumpulkan informasi dasar tentang target ,platform yang sedang berjalan dan versi web server
+5.10 Membangun dan mengaplikasikan beberapa teknik footprinting footprinting best practices
+5.11 Mampu menemukan kerentanan dan eksploitasi untuk meluncurkan serangan
+5.12 Memahami permasalahan footprinting
+5.13 Memahami konsep permasalahan footprinting.
+5.14 Mengklasifikasikan jenis-jenis permasalahan footprinting
+5.15 Menerapkan prosedur pengamanan pada Teknik pengunmpulan informasi
+5.16 Membangun beberapa teknik pengujian jaringan
+5.17 Menjelaskan berbagai teknik hacking
+5.18 Menjelaskan prosedur penerapan berbagai teknik hacking
+5.19 Menerapkan berbagai teknik hacking
+5.20 Mengoperasikan berbagai teknik hacking.
+5.21 Mendokumentasi pengoperasian berbagai teknik hacking
+5.22 Mengevaluasi penggunaan tools yang ada pada kali Linux.
+5.23 Mengevaluasi hasil kerentanan pada target system Operasi dan aplikasi yang digunakan.
+5.24 Menyimpulkan hasil penggunaan tools pada kali linux.
+5.25 Menyimpulkan efektifitas dan celah yang digunakan untuk melakukan serangan kepada target
+5.26 Menjelaskan berbagai permasalahan berbagai teknik hacking
+5.27 Menentukan prosedur berbagai permasalahan teknik hacking
+5.28 Menerapkan pemecahan masalah berbagai teknik hacking
+5.29 Memproyeksikan permasalahan berbagai teknik hacking
+5.30 Menjelaskan analisis hasil berbagai hacking
+5.31 Menerapkan pemecahan masalah hasil berbagai teknik hacking
+5.32 Memproyeksikan permasalahan hasil berbagai teknik hacking
+5.33 Menjelaskan Prosedur penanganan Hacking
+5.34 Menerapkan prosedur penanaganan Hacking
+ 
+5.35 Mempraktikan berbagai Teknik penanganan hacking
+5.36 Memperbaiki permasalahan Hacking
+5.37 Menjelaskan analisis permasalahan penanganan Hacking
+5.38 Menentukan analisis permasalahan teknik hacking
+5.39 Mempraktikan perbaikan permasalahan penanganan Hacking
+5.40 Menjelaskan evaluasi dan alat ukur penanganan hacking
+5.41 Menentukan evaluasi penanganan Hacking
+5.42 Mempraktikan Tindakan data hasil penanganan hacking
+
+### **Modul Ajar Kelas XII Semester 2**
+
+---
+
+#### **1. Identitas dan Informasi Umum**
+
+| **Informasi**            | **Detail**                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------- |
+| **Penyusun**             | Idiarso, S.Kom                                                                                    |
+| **Nama Sekolah**         | SMKN 1 Punggelan                                                                                  |
+| **Program Keahlian**     | Pengembangan Perangkat Lunak dan Gim                                                              |
+| **Konsentrasi Keahlian** | Sistem Informasi, Jaringan, dan Aplikasi                                                          |
+| **Mata Pelajaran**       | Keamanan Jaringan                                                                                 |
+| **Elemen**               | Ethical Hacking                                                                                   |
+| **Fase**                 | F                                                                                                 |
+| **Lingkup Materi**       | Memahami dan menerapkan konsep Ethical Hacking, teknik pengujian penetrasi, serta penggunaan alat |
+| **Kelas / Semester**     | XII / Genap                                                                                       |
+| **Tahun Pelajaran**      | 2023/2024                                                                                         |
+| **Alokasi Waktu**        | 72 JP (18 Pertemuan x 4 JP)                                                                       |
+| **Jumlah Pertemuan**     | 18 TM x 4 JP                                                                                      |
+| **Kompetensi Awal**      | Peserta didik diharapkan memiliki pemahaman dasar tentang keamanan jaringan, SSL/TLS, dan VPN.    |
+
+---
+
+#### **Profil Pelajar Pancasila**
+
+1. **Beriman, bertakwa kepada Tuhan Yang Maha Esa, dan berakhlak mulia**
+   - Memulai dan mengakhiri proses pembelajaran dengan doa sesuai keyakinan masing-masing.
+2. **Gotong Royong**
+   - Kolaborasi dalam kegiatan pengujian penetrasi dan analisis kerentanan jaringan.
+3. **Bernalar Kritis**
+   - Mengidentifikasi risiko jaringan dengan berpikir kritis dan menganalisis teknik Ethical Hacking yang tepat.
+
+---
+
+#### **Sarana dan Prasarana**
+
+- **Media**: PowerPoint, Video Tutorial, Google Classroom, Virtual Lab untuk simulasi Ethical Hacking.
+- **Alat**: Laptop/PC, Koneksi Internet, Metasploit, Burp Suite, Wireshark, dan perangkat simulasi jaringan.
+
+---
+
+#### **Metode Pembelajaran**
+
+- **Discovery Learning**
+- **Problem-Based Learning**
+- **Simulasi dan Studi Kasus**
+
+---
+
+### **2. Kompetensi Inti**
+
+- **Capaian Pembelajaran**  
+  Pada akhir fase F, peserta didik mampu memahami dan menerapkan konsep dasar **Ethical Hacking**, mengidentifikasi teknik pengujian penetrasi dan alat yang digunakan dalam Ethical Hacking, serta memahami tren dan tantangan terbaru dalam keamanan jaringan.
+
+### **Tujuan Pembelajaran**
+
+1. **Memahami Konsep Dasar Ethical Hacking**
+2. **Menguasai Teknik Pengujian Penetrasi dan Analisis Kerentanan**
+3. **Menggunakan Alat-alat Penting dalam Ethical Hacking seperti Metasploit, Burp Suite, dan Wireshark**
+4. **Mengidentifikasi Tantangan dan Tren Terbaru dalam Ethical Hacking**
+5. **Menjelaskan Peran dan Etika dalam Praktik Ethical Hacking**
+
+---
+
+#### **Bukti Ketercapaian**
+
+1. Peserta didik mampu menjelaskan konsep dasar dan tujuan Ethical Hacking.
+2. Peserta didik mampu melakukan pengujian penetrasi sederhana untuk mengidentifikasi kerentanan.
+3. Peserta didik mampu menggunakan alat Metasploit, Burp Suite, dan Wireshark untuk pengujian keamanan.
+4. Peserta didik mampu mengidentifikasi dan memberikan solusi terhadap kerentanan yang ditemukan.
+5. Peserta didik mampu menjelaskan etika dan peran penting Ethical Hacking dalam keamanan jaringan.
+
+---
+
+#### **Asesmen**
+
+1. **Asesmen Awal**  
+   - Mengukur pengetahuan awal peserta didik tentang Ethical Hacking dan peranannya dalam keamanan jaringan.
+   - Diskusi awal untuk memahami pengalaman peserta didik dalam pengujian keamanan atau teknik dasar Ethical Hacking.
+
+2. **Asesmen Formatif**  
+   - Observasi oleh guru untuk menilai pemahaman konsep dan keterampilan praktikum.
+   - Diskusi kelompok dan tanya jawab setelah setiap praktik dan teori yang diberikan.
+
+3. **Asesmen Sumatif**  
+   - Evaluasi pemahaman melalui ujian teori dan praktik pengujian penetrasi.
+   - Laporan analisis hasil pengujian penetrasi dan rekomendasi perbaikan.
+
+---
+
+#### **Pemahaman Bermakna**
+
+Dengan pendekatan **Problem-Based Learning**, peserta didik diharapkan mampu mengidentifikasi dan menerapkan teknik Ethical Hacking melalui studi kasus simulasi, memanfaatkan alat pengujian keamanan, dan membangun solusi untuk mengatasi kerentanan jaringan.
+
+---
+
+
+### **Rencana Pembelajaran Semester 2 - Kelas XII (Ethical Hacking)**
+
+---
+
+| **Pertemuan** | **Topik Utama**                             | **Durasi (Menit)** | **Subtopik**                                                                                                                           | **Kegiatan Pembelajaran**                                                                                                                             |
+| ------------- | ------------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1**         | Pengantar Ethical Hacking                   | 180                | - Definisi dan Tujuan Ethical Hacking <br> - Etika dalam Ethical Hacking                                                               | - Pengantar konsep Ethical Hacking dan perbedaannya dengan hacking ilegal <br> - Diskusi tentang etika dalam Ethical Hacking <br> - Refleksi kelompok |
+| **2**         | Metodologi dan Proses Ethical Hacking       | 180                | - Proses dalam Ethical Hacking <br> - Langkah-langkah utama: perencanaan, eksplorasi, analisis, dan pelaporan                          | - Penjelasan metodologi Ethical Hacking <br> - Diskusi kelompok tentang tiap langkah <br> - Pengenalan studi kasus singkat                            |
+| **3**         | Pengujian Penetrasi (Penetration Testing)   | 180                | - Pengantar teknik Pengujian Penetrasi <br> - Memahami tahap-tahap dasar pengujian penetrasi                                           | - Pengenalan dan demonstrasi teknik pengujian penetrasi <br> - Praktik dasar pengujian penetrasi pada jaringan simulasi                               |
+| **4**         | Analisis Kerentanan                         | 180                | - Teknik Analisis Kerentanan <br> - Identifikasi dan klasifikasi kerentanan                                                            | - Penjelasan teori analisis kerentanan <br> - Siswa mencoba mengidentifikasi kerentanan dalam jaringan simulasi                                       |
+| **5**         | Eksploitasi dan Post-Exploitation           | 180                | - Teknik eksploitasi dan dampak pasca-eksploitasi <br> - Langkah post-exploitation                                                     | - Penjelasan tahap eksploitasi dan post-exploitation <br> - Diskusi tentang risiko eksploitasi dan mitigasi kerentanan                                |
+| **6**         | Alat untuk Ethical Hacking (Metasploit)     | 180                | - Pengenalan Metasploit <br> - Fitur dan Konfigurasi Dasar                                                                             | - Demonstrasi penggunaan dasar Metasploit <br> - Praktik siswa dalam menemukan kerentanan menggunakan Metasploit                                      |
+| **7**         | Alat untuk Ethical Hacking (Burp Suite)     | 180                | - Pengenalan Burp Suite <br> - Fitur dan Konfigurasi Dasar                                                                             | - Pengenalan alat Burp Suite <br> - Praktik siswa menggunakan Burp Suite untuk pengujian keamanan aplikasi web                                        |
+| **8**         | Alat untuk Ethical Hacking (Wireshark)      | 180                | - Pengenalan Wireshark <br> - Teknik Monitoring dan Analisis Lalu Lintas Jaringan                                                      | - Demonstrasi cara kerja Wireshark <br> - Praktik siswa menggunakan Wireshark untuk menganalisis lalu lintas jaringan                                 |
+| **9**         | Praktik Pengujian Penetrasi                 | 180                | - Melakukan pengujian penetrasi sederhana <br> - Menganalisis hasil pengujian                                                          | - Praktik pengujian penetrasi lengkap pada jaringan simulasi <br> - Diskusi hasil dan identifikasi kerentanan yang ditemukan                          |
+| **10**        | Penggunaan dan Konfigurasi Alat             | 180                | - Menyusun konfigurasi alat pengujian <br> - Mengoptimalkan penggunaan alat                                                            | - Latihan konfigurasi alat-alat ethical hacking <br> - Evaluasi efisiensi alat dan dampak pengujian                                                   |
+| **11**        | Sertifikasi Ethical Hacking                 | 180                | - Pengantar sertifikasi CEH, OSCP, dan lainnya <br> - Persyaratan dan manfaat                                                          | - Diskusi tentang sertifikasi profesional di bidang Ethical Hacking <br> - Penjelasan persiapan untuk sertifikasi                                     |
+| **12**        | Tantangan Ethical Hacking dalam Dunia Nyata | 180                | - Tantangan umum dalam pengujian keamanan <br> - Teknik menghadapi tantangan                                                           | - Diskusi kasus nyata terkait tantangan Ethical Hacking <br> - Brainstorming solusi untuk tiap tantangan                                              |
+| **13**        | Tren Terbaru dalam Ethical Hacking          | 180                | - Evolusi teknik hacking <br> - Ancaman baru dan adaptasi dalam Ethical Hacking                                                        | - Penjelasan tren terbaru dalam dunia hacking <br> - Diskusi tentang bagaimana teknik hacking berkembang untuk mengatasi ancaman baru                 |
+| **14**        | Masa Depan Ethical Hacking                  | 180                | - Perkembangan teknologi dan dampaknya pada Ethical Hacking <br> - Potensi peran Ethical Hacking dalam keamanan jaringan di masa depan | - Diskusi interaktif tentang masa depan Ethical Hacking <br> - Siswa memprediksi perubahan teknik dan alat Ethical Hacking                            |
+| **15**        | Review dan Refleksi Ethical Hacking         | 180                | - Review seluruh materi yang telah dipelajari <br> - Refleksi mengenai penerapan Ethical Hacking                                       | - Diskusi kelompok untuk merangkum materi <br> - Setiap siswa menuliskan refleksi tentang pemahaman mereka terkait Ethical Hacking                    |
+| **16**        | Ujian Praktik Pengujian Penetrasi           | 180                | - Melakukan ujian praktik untuk penerapan pengujian penetrasi dan analisis hasil                                                       | - Ujian praktik pengujian penetrasi berdasarkan studi kasus                                                                                           |
+| **17**        | Ujian Teori Ethical Hacking                 | 180                | - Mengukur pemahaman teori tentang Ethical Hacking                                                                                     | - Tes tertulis mengenai konsep dasar, teknik, alat, dan tren dalam Ethical Hacking                                                                    |
+| **18**        | Evaluasi Akhir dan Diskusi Pembelajaran     | 180                | - Evaluasi capaian pembelajaran <br> - Penyelesaian masalah dan tanya jawab                                                            | - Diskusi terbuka untuk menyelesaikan pertanyaan siswa <br> - Evaluasi hasil pembelajaran dan pemahaman Ethical Hacking                               |
+
+---
+
+### **Kegiatan Pembelajaran Detail untuk Setiap Pertemuan**
+
+- **Pendahuluan (15 menit)**: Pengenalan topik, pengingat materi sebelumnya, dan tujuan pembelajaran pertemuan.
+- **Kegiatan Inti (135 menit)**: 
+   - Penjelasan teori atau konsep utama 
+   - Demonstrasi penggunaan alat atau teknik Ethical Hacking
+   - Diskusi dan praktik kelompok atau individu sesuai topik
+- **Penutup (30 menit)**: 
+   - Diskusi refleksi, tanya jawab
+   - Pemberian tugas lanjutan atau persiapan untuk pertemuan berikutnya.
+
+---
+
+### **Tujuan Pembelajaran per Pertemuan**
+
+1. **Pertemuan 1-2**: Peserta didik memahami konsep dasar Ethical Hacking, etika, dan metodologi dalam proses pengujian keamanan jaringan.
+2. **Pertemuan 3-5**: Peserta didik mampu memahami teknik pengujian penetrasi, analisis kerentanan, dan eksploitasi serta post-exploitation.
+3. **Pertemuan 6-8**: Peserta didik mengenal alat-alat utama dalam Ethical Hacking (Metasploit, Burp Suite, Wireshark) dan mampu melakukan konfigurasi dasar.
+4. **Pertemuan 9-10**: Peserta didik dapat melakukan pengujian penetrasi dan konfigurasi alat secara mandiri dalam jaringan simulasi.
+5. **Pertemuan 11-12**: Peserta didik memahami sertifikasi yang relevan dalam Ethical Hacking serta tantangan yang dihadapi dalam praktik nyata.
+6. **Pertemuan 13-14**: Peserta didik mengenal tren terbaru dan memprediksi perkembangan Ethical Hacking di masa depan.
+7. **Pertemuan 15**: Peserta didik merefleksikan pembelajaran dan mengulas pemahaman materi secara keseluruhan.
+8. **Pertemuan 16-18**: Peserta didik mengikuti evaluasi akhir berupa ujian praktik dan teori, serta diskusi pembelajaran sebagai penutup.
+
+---
+
+### **Bahan dan Media Pembelajaran**
+
+1. **Media**: PowerPoint, Google Classroom, Video Tutorial, Simulasi Virtual Lab.
+2. **Alat Praktik**: Laptop/PC, koneksi internet, software Metasploit, Burp Suite, dan Wireshark.
+
+---
+
+### **Evaluasi**
+
+- **Asesmen Formatif**: Melalui diskusi dan latihan praktik pada setiap pertemuan.
+- **Asesmen Sumatif**: Tes teori, ujian praktik, dan laporan hasil akhir pengujian.
+- **Refleksi dan Umpan Balik**: Setiap akhir pertemuan melalui refleksi kelompok atau individu.
+
+### **Pertemuan 1: Pengantar Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | **Alokasi Waktu** |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami definisi, tujuan, dan etika dalam Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video pendek sebagai apersepsi tentang peran dan pentingnya Ethical Hacking dalam dunia siber (contoh: [Introduction to Ethical Hacking](https://www.youtube.com/watch?v=7NeEFaRF0U4)). <br> - Diskusi singkat tentang pandangan siswa mengenai perbedaan antara hacker dan ethical hacker.                                                                                                                                             | 20 menit          |
+| **Kegiatan Inti**    | **1. Penjelasan Definisi dan Tujuan Ethical Hacking** <br> - Pendidik menjelaskan definisi Ethical Hacking, perbedaannya dengan hacking ilegal, dan tujuan utama Ethical Hacking dalam meningkatkan keamanan siber. <br> **2. Peran dan Etika dalam Ethical Hacking** <br> - Pendidik membahas pentingnya etika dalam Ethical Hacking, serta peran seorang ethical hacker dalam melindungi sistem dan jaringan dari ancaman keamanan. <br> **3. Proses dan Metodologi Ethical Hacking** <br> - Pendidik memperkenalkan metodologi dasar dalam Ethical Hacking, termasuk langkah perencanaan, eksplorasi, pengujian, dan pelaporan. <br> **4. Diskusi**: <br> - Peserta didik berdiskusi tentang situasi yang memerlukan tindakan ethical hacking dan dampak positifnya pada keamanan organisasi.    | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi melalui link yang disediakan. <br> 2. Pendidik membuat kesimpulan tentang pentingnya Ethical Hacking dalam keamanan jaringan dan peran etika dalam setiap tindakan hacking. <br> 3. Tugas untuk mencari contoh kasus terkait tindakan hacking yang memiliki dampak besar pada suatu organisasi atau perusahaan untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                    | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Introduction to Ethical Hacking](https://www.youtube.com/watch?v=7NeEFaRF0U4) – Video ini memberikan pengantar dasar tentang Ethical Hacking, tujuan, dan peran ethical hacker dalam keamanan jaringan.
+- **Artikel Online**: [What is Ethical Hacking?](https://www.csoonline.com/article/3279524/what-is-ethical-hacking.html) – Menjelaskan definisi Ethical Hacking, metodologi, dan etika dalam pelaksanaannya.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                           | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | --------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami konsep dasar Ethical Hacking dan perbedaannya dengan hacking ilegal?   | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat menjelaskan peran etika dalam tindakan Ethical Hacking?                | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam membahas topik keamanan jaringan?            | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                    | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+### **Pertemuan 2: Metodologi dan Proses Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | **Alokasi Waktu** |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami metodologi dan langkah-langkah utama dalam proses Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video pendek yang menjelaskan langkah-langkah dasar dalam Ethical Hacking, dari perencanaan hingga pelaporan (contoh: [Ethical Hacking Methodology](https://www.youtube.com/watch?v=PRo5-jS0pME)). <br> - Pendidik mengarahkan siswa untuk membaca artikel singkat sebagai referensi tentang tahapan-tahapan dalam Ethical Hacking ([The Ethical Hacking Process](https://www.cybrary.it/blog/ethical-hacking-process/)). <br> - Diskusi singkat tentang pandangan siswa mengenai pentingnya tahapan yang sistematis dalam proses hacking. | 20 menit          |
+| **Kegiatan Inti**    | **1. Penjelasan Metodologi Ethical Hacking** <br> - Pendidik menjelaskan metodologi dasar dalam Ethical Hacking, termasuk tujuan setiap tahap dalam melindungi jaringan atau sistem. <br> **2. Tahap Perencanaan dan Eksplorasi** <br> - Pendidik membahas pentingnya perencanaan dan eksplorasi dalam mengidentifikasi potensi kerentanan tanpa merusak sistem. <br> **3. Tahap Pengujian dan Analisis** <br> - Pendidik menjelaskan tahap pengujian penetrasi, mengidentifikasi risiko, dan teknik analisis untuk memahami dampak dari setiap kerentanan. <br> **4. Tahap Pelaporan dan Rekomendasi** <br> - Pendidik memberikan contoh format laporan Ethical Hacking dan cara memberikan rekomendasi untuk mitigasi risiko. <br> **5. Diskusi Kelompok**: <br> - Siswa berdiskusi dalam kelompok mengenai situasi yang berbeda untuk memahami bagaimana metodologi Ethical Hacking diterapkan di dunia nyata.      | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka terhadap metodologi dan proses Ethical Hacking melalui link yang disediakan. <br> 2. Pendidik merangkum dan menekankan pentingnya setiap tahap dalam metodologi Ethical Hacking untuk menjaga keamanan sistem. <br> 3. Tugas untuk mencari satu studi kasus pengujian penetrasi yang memiliki dampak besar pada keamanan suatu perusahaan untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                         | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Ethical Hacking Methodology](https://www.youtube.com/watch?v=PRo5-jS0pME) – Video ini menjelaskan tahap-tahap utama dalam Ethical Hacking, dari perencanaan hingga pelaporan, serta tujuan di balik setiap langkah.
+- **Artikel Online**: [The Ethical Hacking Process](https://www.cybrary.it/blog/ethical-hacking-process/) – Artikel ini memberikan penjelasan mendalam mengenai metodologi dalam Ethical Hacking dan langkah-langkah praktis yang diperlukan dalam proses ini.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                           | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | --------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami tahap-tahap dasar dalam metodologi Ethical Hacking?         | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat menjelaskan pentingnya perencanaan dan eksplorasi dalam proses hacking? | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam memahami proses Ethical Hacking secara keseluruhan? | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                    | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+### **Pertemuan 3: Pengujian Penetrasi (Penetration Testing)**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami konsep pengujian penetrasi, tujuannya, dan teknik dasar yang digunakan dalam penetrasi jaringan. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat yang menjelaskan dasar-dasar penetration testing dan penerapannya dalam keamanan jaringan (contoh: [Penetration Testing Basics](https://www.youtube.com/watch?v=0HEHrDMmuIE)). <br> - Pendidik mengarahkan siswa untuk membaca artikel singkat mengenai pentingnya pengujian penetrasi dalam industri keamanan siber ([Importance of Penetration Testing](https://www.imperva.com/learn/application-security/penetration-testing/)). <br> - Diskusi singkat tentang tujuan pengujian penetrasi dalam mencegah serangan siber. | 20 menit          |
+| **Kegiatan Inti**    | **1. Penjelasan Dasar Pengujian Penetrasi** <br> - Pendidik menjelaskan konsep pengujian penetrasi, termasuk tujuannya dalam mengidentifikasi dan mengeksploitasi kerentanan dalam sistem jaringan. <br> **2. Teknik Pengujian Penetrasi** <br> - Pendidik membahas teknik-teknik dasar pengujian penetrasi, seperti pemetaan jaringan, pemindaian, eksploitasi, dan laporan. <br> **3. Praktik Simulasi** <br> - Siswa melakukan simulasi pengujian penetrasi pada jaringan virtual, menggunakan alat dasar seperti Nmap untuk pemindaian jaringan dan Metasploit untuk eksploitasi. <br> **4. Diskusi Kelompok**: <br> - Siswa berdiskusi mengenai hasil simulasi pengujian penetrasi, membahas kerentanan yang ditemukan, dan cara mengatasi kelemahan sistem yang diidentifikasi.          | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai teknik pengujian penetrasi melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang tujuan dan proses pengujian penetrasi serta alat yang digunakan dalam simulasi. <br> 3. Tugas untuk mencari artikel atau berita terkait penggunaan penetration testing dalam organisasi nyata untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                     | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Penetration Testing Basics](https://www.youtube.com/watch?v=0HEHrDMmuIE) – Video ini memberikan pengantar dasar tentang pengujian penetrasi, teknik yang digunakan, dan pentingnya bagi keamanan jaringan.
+- **Artikel Online**: [Importance of Penetration Testing](https://www.imperva.com/learn/application-security/penetration-testing/) – Artikel ini menjelaskan pentingnya pengujian penetrasi dan langkah-langkah yang diambil dalam proses pengujian ini.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                               | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami konsep dasar pengujian penetrasi?                                | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat menjelaskan teknik dasar yang digunakan dalam pengujian penetrasi?  | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam mempraktikkan pengujian penetrasi?        | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                   | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 4: Analisis Kerentanan**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami konsep analisis kerentanan, metode identifikasi, dan klasifikasi kerentanan. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat tentang analisis kerentanan dan pentingnya mengidentifikasi potensi risiko dalam jaringan (contoh: [Vulnerability Assessment Overview](https://www.youtube.com/watch?v=TCkGEGqC2SI)). <br> - Pendidik mengarahkan siswa untuk membaca artikel singkat mengenai langkah-langkah dalam analisis kerentanan ([What is Vulnerability Assessment?](https://www.csoonline.com/article/3330298/what-is-a-vulnerability-assessment.html)). <br> - Diskusi singkat mengenai pentingnya analisis kerentanan dalam pencegahan serangan siber. | 20 menit          |
+| **Kegiatan Inti**    | **1. Penjelasan Konsep Analisis Kerentanan** <br> - Pendidik menjelaskan pengertian analisis kerentanan, tujuan, dan manfaatnya dalam keamanan jaringan. <br> **2. Teknik Identifikasi Kerentanan** <br> - Pendidik menjelaskan teknik dasar untuk mengidentifikasi kerentanan dalam sistem, termasuk pemindaian otomatis dan manual. <br> **3. Klasifikasi Kerentanan** <br> - Pendidik membahas klasifikasi kerentanan berdasarkan tingkat risiko dan dampaknya terhadap sistem. <br> **4. Praktik Identifikasi Kerentanan** <br> - Siswa melakukan simulasi pemindaian kerentanan pada jaringan virtual, menggunakan alat seperti Nessus atau OpenVAS untuk mengidentifikasi kerentanan. <br> **5. Diskusi Kelompok**: <br> - Siswa mendiskusikan hasil analisis kerentanan, membahas tingkat risiko, dan tindakan pencegahan yang bisa diambil untuk mengurangi risiko yang ditemukan. | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai teknik identifikasi dan klasifikasi kerentanan melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang konsep analisis kerentanan dan pentingnya dalam keamanan jaringan. <br> 3. Tugas untuk mencari contoh kerentanan yang pernah dieksploitasi dan dampaknya pada organisasi untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                              | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Vulnerability Assessment Overview](https://www.youtube.com/watch?v=TCkGEGqC2SI) – Video ini memberikan pengantar mengenai analisis kerentanan dan pentingnya mengidentifikasi risiko di jaringan.
+- **Artikel Online**: [What is Vulnerability Assessment?](https://www.csoonline.com/article/3330298/what-is-a-vulnerability-assessment.html) – Artikel ini menjelaskan pentingnya analisis kerentanan dan langkah-langkah yang digunakan dalam proses identifikasi kerentanan.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | -------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami konsep dasar analisis kerentanan?                                | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat menjelaskan teknik dasar yang digunakan dalam identifikasi kerentanan? | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam mempraktikkan analisis kerentanan?        | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                   | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 5: Eksploitasi dan Post-Exploitation**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | **Alokasi Waktu** |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami konsep eksploitasi dan post-exploitation dalam Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat yang menjelaskan proses eksploitasi dan pentingnya memahami tahap post-exploitation dalam Ethical Hacking (contoh: [Exploitation and Post-Exploitation](https://www.youtube.com/watch?v=xyz123)). <br> - Pendidik mengarahkan siswa untuk membaca artikel singkat mengenai proses eksploitasi dan risiko yang timbul saat eksploitasi dilakukan ([Exploitation in Ethical Hacking](https://www.csoonline.com/article/xyz)). <br> - Diskusi singkat tentang dampak eksploitasi dalam keamanan jaringan dan pentingnya mitigasi. | 20 menit          |
+| **Kegiatan Inti**    | **1. Penjelasan Eksploitasi dalam Ethical Hacking** <br> - Pendidik menjelaskan konsep eksploitasi, termasuk teknik umum yang digunakan untuk mengeksploitasi kerentanan dalam sistem. <br> **2. Post-Exploitation: Tujuan dan Teknik** <br> - Pendidik menjelaskan tujuan tahap post-exploitation, yang meliputi pengumpulan informasi, eskalasi hak akses, dan pemeliharaan akses. <br> **3. Demonstrasi Alat Eksploitasi** <br> - Pendidik mendemonstrasikan alat-alat eksploitasi seperti Metasploit, yang umum digunakan dalam Ethical Hacking untuk menembus sistem target. <br> **4. Diskusi Kelompok**: <br> - Siswa mendiskusikan dampak dari eksploitasi yang berhasil, bagaimana informasi yang diperoleh dalam post-exploitation dapat digunakan untuk meningkatkan keamanan sistem.     | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai eksploitasi dan post-exploitation melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang teknik eksploitasi, risiko yang timbul, dan pentingnya tindakan mitigasi setelah eksploitasi. <br> 3. Tugas untuk mencari contoh kasus di mana eksploitasi kerentanan dilakukan dan dampaknya pada organisasi untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                        | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Exploitation and Post-Exploitation](https://www.youtube.com/watch?v=xyz123) – Video ini menjelaskan proses eksploitasi dan tahapan yang dilakukan setelah eksploitasi dalam Ethical Hacking.
+- **Artikel Online**: [Exploitation in Ethical Hacking](https://www.csoonline.com/article/xyz) – Artikel ini membahas eksploitasi kerentanan dan tindakan lanjutan setelah eksploitasi berhasil dilakukan, serta risiko yang dihadapi.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                               | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami konsep eksploitasi dan post-exploitation dalam Ethical Hacking? | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat menjelaskan risiko yang timbul dari eksploitasi yang berhasil?       | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam memahami teknik eksploitasi?              | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                   | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+### **Pertemuan 6: Alat-Alat Penting untuk Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | **Alokasi Waktu** |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami alat-alat penting yang digunakan dalam Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat yang memperkenalkan alat-alat penting dalam Ethical Hacking, seperti Metasploit, Wireshark, dan Burp Suite (contoh: [Tools for Ethical Hacking](https://www.youtube.com/watch?v=abc123)). <br> - Pendidik mengarahkan siswa untuk membaca artikel singkat yang menjelaskan kegunaan dari masing-masing alat ini ([Top Ethical Hacking Tools](https://www.cybrary.it/blog/top-ethical-hacking-tools/)). <br> - Diskusi singkat mengenai alat yang paling dikenal atau pernah digunakan oleh siswa. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Alat-Alat Penting dalam Ethical Hacking** <br> - Pendidik menjelaskan alat-alat utama yang sering digunakan dalam Ethical Hacking, termasuk fungsi dan kegunaan masing-masing alat. <br> **2. Demonstrasi Penggunaan Metasploit** <br> - Pendidik memberikan contoh penggunaan Metasploit untuk eksploitasi kerentanan pada lingkungan jaringan virtual. <br> **3. Praktik Pemantauan Jaringan dengan Wireshark** <br> - Siswa menggunakan Wireshark untuk memantau lalu lintas jaringan dan mengidentifikasi paket data yang mencurigakan. <br> **4. Diskusi Kelompok**: <br> - Siswa berdiskusi mengenai manfaat dan tantangan dalam penggunaan alat-alat ini, serta situasi di mana alat tertentu lebih cocok digunakan daripada yang lain.                        | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai alat-alat Ethical Hacking melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang fungsi dan manfaat dari alat-alat yang telah diperkenalkan. <br> 3. Tugas untuk mencari satu contoh penggunaan alat Ethical Hacking dalam studi kasus atau berita untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                           | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Tools for Ethical Hacking](https://www.youtube.com/watch?v=abc123) – Video ini memperkenalkan alat-alat utama yang digunakan dalam Ethical Hacking dan fungsi masing-masing alat.
+- **Artikel Online**: [Top Ethical Hacking Tools](https://www.cybrary.it/blog/top-ethical-hacking-tools/) – Artikel ini menjelaskan berbagai alat penting dalam Ethical Hacking dan kegunaannya dalam berbagai situasi keamanan.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+|**Refleksi Peserta Didik**|**Pertanyaan Refleksi**|**Baik**|**Cukup**|**Kurang**|
+|---|---|---|---|---|
+||Apakah Anda memahami fungsi alat-alat utama dalam Ethical Hacking?|[ ]|[ ]|[ ]|
+||Apakah Anda dapat menjelaskan kapan alat tertentu lebih cocok digunakan?|[ ]|[ ]|[ ]|
+||Apakah Anda merasa lebih percaya diri dalam menggunakan alat-alat ini?|[ ]|[ ]|[ ]|
+||Apa yang paling menarik dari pembelajaran hari ini?|[ ]|[ ]|[ ]|
+
+|**Refleksi Pendidik**|**Pertanyaan**|**Jawaban**|
+|---|---|---|
+|1|Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?||
+|2|Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?||
+|3|Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?||
+|4|Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?||
+|5|Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?||
+### **Pertemuan 7: Penggunaan dan Konfigurasi Alat Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | **Alokasi Waktu** |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami cara penggunaan dan konfigurasi alat-alat utama dalam Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat tentang langkah-langkah konfigurasi dasar alat Ethical Hacking seperti Metasploit, Burp Suite, dan Wireshark (contoh: [Configuring Ethical Hacking Tools](https://www.youtube.com/watch?v=example)). <br> - Pendidik meminta siswa untuk membaca artikel tentang dasar konfigurasi alat-alat ini ([Configuring Metasploit and Wireshark](https://www.cybrary.it/blog/configuring-hacking-tools/)). <br> - Diskusi singkat mengenai pengalaman siswa dalam mengonfigurasi alat-alat keamanan jaringan sebelumnya. | 20 menit          |
+| **Kegiatan Inti**    | **1. Demonstrasi Konfigurasi Metasploit** <br> - Pendidik menjelaskan dan menunjukkan langkah-langkah untuk mengonfigurasi Metasploit dalam jaringan virtual. <br> **2. Penggunaan Burp Suite untuk Pemantauan Aplikasi Web** <br> - Pendidik mendemonstrasikan cara menggunakan Burp Suite untuk menguji keamanan aplikasi web, termasuk teknik intercepting traffic dan analisis respons server. <br> **3. Praktik Monitoring Jaringan dengan Wireshark** <br> - Siswa melakukan praktik langsung menggunakan Wireshark untuk mengamati lalu lintas jaringan, mengidentifikasi paket data, dan memahami alur data. <br> **4. Diskusi Kelompok**: <br> - Siswa berdiskusi mengenai konfigurasi alat, kesulitan yang dihadapi, dan situasi yang paling tepat untuk menggunakan setiap alat.                       | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka dalam konfigurasi dan penggunaan alat-alat Ethical Hacking melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang teknik konfigurasi dasar Metasploit, Burp Suite, dan Wireshark. <br> 3. Tugas untuk mencoba mengonfigurasi salah satu alat di luar kelas dan mencatat hasilnya untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                           | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Configuring Ethical Hacking Tools](https://www.youtube.com/watch?v=example) – Video ini menjelaskan langkah-langkah konfigurasi dasar beberapa alat utama yang digunakan dalam Ethical Hacking.
+- **Artikel Online**: [Configuring Metasploit and Wireshark](https://www.cybrary.it/blog/configuring-hacking-tools/) – Artikel ini memberikan panduan konfigurasi alat-alat seperti Metasploit dan Wireshark dalam Ethical Hacking.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                  | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ---------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami cara konfigurasi alat Metasploit, Burp Suite, dan Wireshark?        | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat menjelaskan kapan dan bagaimana setiap alat ini digunakan?             | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam menggunakan alat-alat ini untuk pemantauan?  | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                      | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 8: Pelatihan dan Sertifikasi dalam Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | **Alokasi Waktu** |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami pelatihan dan sertifikasi yang diperlukan dalam bidang Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat yang menjelaskan pentingnya sertifikasi dalam bidang keamanan siber dan karir dalam Ethical Hacking (contoh: [Ethical Hacking Certifications](https://www.youtube.com/watch?v=example2)). <br> - Pendidik meminta siswa untuk membaca artikel tentang sertifikasi populer di Ethical Hacking ([Top Certifications for Ethical Hackers](https://www.cybersecurityguide.org/top-certifications/)). <br> - Diskusi singkat tentang motivasi siswa dalam meniti karir di keamanan siber. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Sertifikasi Ethical Hacking** <br> - Pendidik menjelaskan berbagai jenis sertifikasi dalam bidang Ethical Hacking, seperti CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional), dan CompTIA Security+. <br> **2. Kualifikasi dan Persyaratan Sertifikasi** <br> - Pendidik membahas persyaratan, biaya, dan proses sertifikasi untuk masing-masing jenis sertifikasi, serta materi yang harus dipelajari. <br> **3. Manfaat Sertifikasi** <br> - Siswa mendiskusikan manfaat sertifikasi dalam dunia kerja dan bagaimana sertifikasi dapat membantu mereka menjadi ahli di bidang keamanan jaringan. <br> **4. Diskusi Kelompok**: <br> - Siswa berdiskusi mengenai rencana mereka dalam mengambil sertifikasi, tantangan yang mungkin dihadapi, dan sumber daya yang dapat digunakan.                                | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai pelatihan dan sertifikasi di bidang Ethical Hacking melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang berbagai sertifikasi dan manfaatnya dalam karir keamanan siber. <br> 3. Tugas untuk mencari informasi tentang pelatihan sertifikasi yang diminati dan menuliskan langkah-langkah untuk mencapainya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                           | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Ethical Hacking Certifications](https://www.youtube.com/watch?v=example2) – Video ini memberikan informasi tentang sertifikasi dalam bidang Ethical Hacking dan manfaatnya.
+- **Artikel Online**: [Top Certifications for Ethical Hackers](https://www.cybersecurityguide.org/top-certifications/) – Artikel ini menjelaskan sertifikasi yang populer dalam Ethical Hacking dan nilai tambahnya dalam karir keamanan siber.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+|**Refleksi Peserta Didik**|**Pertanyaan Refleksi**|**Baik**|**Cukup**|**Kurang**|
+|---|---|---|---|---|
+||Apakah Anda memahami jenis-jenis sertifikasi di bidang Ethical Hacking?|[ ]|[ ]|[ ]|
+||Apakah Anda dapat menjelaskan manfaat sertifikasi dalam karir keamanan siber?|[ ]|[ ]|[ ]|
+||Apakah Anda tertarik untuk mendapatkan sertifikasi di bidang ini?|[ ]|[ ]|[ ]|
+||Apa yang paling menarik dari pembelajaran hari ini?|[ ]|[ ]|[ ]|
+
+|**Refleksi Pendidik**|**Pertanyaan**|**Jawaban**|
+|---|---|---|
+|1|Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?||
+|2|Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?||
+|3|Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?||
+|4|Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?||
+|5|Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?||
+### **Pertemuan 9: Evolusi Ancaman dan Teknik Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | **Alokasi Waktu** |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami evolusi ancaman dan teknik hacking yang berkembang dari waktu ke waktu. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat tentang evolusi ancaman siber dan bagaimana teknik hacking terus berkembang seiring waktu (contoh: [Evolution of Cyber Threats](https://www.youtube.com/watch?v=example3)). <br> - Pendidik meminta siswa membaca artikel tentang teknik hacking yang populer dan tren ancaman terbaru ([Latest Cyber Threat Trends](https://www.cybersecurityguide.org/threat-trends/)). <br> - Diskusi singkat mengenai pengalaman atau pemahaman siswa terhadap ancaman siber saat ini. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Evolusi Ancaman Siber** <br> - Pendidik menjelaskan bagaimana ancaman siber telah berubah, dari serangan virus sederhana hingga teknik canggih seperti Advanced Persistent Threats (APT). <br> **2. Teknik Hacking yang Populer** <br> - Pendidik memperkenalkan teknik hacking yang banyak digunakan saat ini, seperti phishing, ransomware, dan serangan berbasis AI. <br> **3. Diskusi Kelompok: Studi Kasus** <br> - Siswa bekerja dalam kelompok untuk menganalisis studi kasus tentang serangan siber terbaru dan berdiskusi mengenai teknik yang digunakan, dampaknya, serta bagaimana ancaman ini bisa dicegah. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil diskusi mereka di depan kelas, berbagi wawasan mengenai ancaman yang mereka pelajari dan cara mitigasinya.                      | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai evolusi ancaman siber dan teknik hacking melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang perubahan ancaman siber dari masa ke masa dan teknik hacking yang semakin kompleks. <br> 3. Tugas untuk mencari satu contoh kasus serangan siber terbaru di berita dan mencatat teknik yang digunakan, yang akan dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                             | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Evolution of Cyber Threats](https://www.youtube.com/watch?v=example3) – Video ini menjelaskan bagaimana ancaman siber telah berkembang dan berbagai teknik hacking yang muncul dari waktu ke waktu.
+- **Artikel Online**: [Latest Cyber Threat Trends](https://www.cybersecurityguide.org/threat-trends/) – Artikel ini memberikan informasi mengenai tren terbaru dalam ancaman siber dan teknik hacking yang digunakan oleh pelaku ancaman.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                  | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ---------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami bagaimana ancaman siber telah berevolusi?                           | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat mengidentifikasi teknik hacking populer yang digunakan saat ini?       | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam memahami tren ancaman siber?                 | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                      | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 10: Adaptasi dan Pembaruan dalam Metodologi Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | **Alokasi Waktu** |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami pentingnya adaptasi dan pembaruan dalam metodologi Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat yang menjelaskan bagaimana pelaku keamanan siber terus mengembangkan metode mereka untuk mengimbangi ancaman baru (contoh: [Updating Ethical Hacking Methodologies](https://www.youtube.com/watch?v=example4)). <br> - Pendidik meminta siswa membaca artikel tentang pentingnya pembaruan dalam strategi Ethical Hacking ([Keeping Ethical Hacking Methods Updated](https://www.cyberdefensemagazine.com/updates-in-ethical-hacking/)). <br> - Diskusi singkat mengenai pentingnya pembaruan dalam menghadapi ancaman siber yang dinamis. | 20 menit          |
+| **Kegiatan Inti**    | **1. Penjelasan Pentingnya Pembaruan dalam Ethical Hacking** <br> - Pendidik menjelaskan mengapa pembaruan metodologi Ethical Hacking diperlukan untuk menghadapi ancaman yang semakin kompleks. <br> **2. Teknik dan Strategi Baru dalam Ethical Hacking** <br> - Pendidik menjelaskan beberapa teknik baru yang digunakan dalam Ethical Hacking, seperti AI-assisted hacking dan penggunaan machine learning untuk mendeteksi anomali. <br> **3. Diskusi Kelompok: Mengembangkan Metodologi** <br> - Siswa bekerja dalam kelompok untuk mengusulkan ide atau teknik baru yang dapat ditambahkan dalam metodologi Ethical Hacking untuk menghadapi ancaman modern. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil diskusi mereka di depan kelas, menjelaskan bagaimana teknik baru mereka dapat membantu dalam deteksi dan mitigasi ancaman.                            | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai pentingnya adaptasi dalam Ethical Hacking melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang strategi pembaruan dan adaptasi yang diperlukan dalam Ethical Hacking untuk menghadapi ancaman yang berkembang. <br> 3. Tugas untuk mencari artikel atau berita mengenai teknologi baru dalam Ethical Hacking yang akan dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                               | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Updating Ethical Hacking Methodologies](https://www.youtube.com/watch?v=example4) – Video ini membahas pentingnya adaptasi dan pembaruan dalam metode Ethical Hacking untuk mengimbangi ancaman yang terus berkembang.
+- **Artikel Online**: [Keeping Ethical Hacking Methods Updated](https://www.cyberdefensemagazine.com/updates-in-ethical-hacking/) – Artikel ini menjelaskan kebutuhan akan pembaruan metode Ethical Hacking untuk menghadapi ancaman baru.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+|**Refleksi Peserta Didik**|**Pertanyaan Refleksi**|**Baik**|**Cukup**|**Kurang**|
+|---|---|---|---|---|
+||Apakah Anda memahami pentingnya pembaruan dalam metodologi Ethical Hacking?|[ ]|[ ]|[ ]|
+||Apakah Anda dapat mengidentifikasi strategi baru dalam menghadapi ancaman siber modern?|[ ]|[ ]|[ ]|
+||Apakah Anda merasa lebih percaya diri dalam memahami konsep pembaruan di Ethical Hacking?|[ ]|[ ]|[ ]|
+||Apa yang paling menarik dari pembelajaran hari ini?|[ ]|[ ]|[ ]|
+
+|**Refleksi Pendidik**|**Pertanyaan**|**Jawaban**|
+|---|---|---|
+|1|Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?||
+|2|Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?||
+|3|Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?||
+|4|Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?||
+|5|Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?||
+### **Pertemuan 11: Masa Depan Ethical Hacking dalam Keamanan Jaringan**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | **Alokasi Waktu** |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami arah perkembangan masa depan Ethical Hacking dalam keamanan jaringan. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat tentang tren masa depan dalam Ethical Hacking dan teknologi baru yang berpotensi mengubah lanskap keamanan siber (contoh: [Future of Ethical Hacking](https://www.youtube.com/watch?v=example5)). <br> - Pendidik meminta siswa untuk membaca artikel mengenai peran AI, ML, dan IoT dalam Ethical Hacking di masa depan ([Future Technologies in Cybersecurity](https://www.cybersecurityguide.org/future-trends/)). <br> - Diskusi singkat mengenai teknologi yang menarik bagi siswa. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Teknologi Masa Depan dalam Ethical Hacking** <br> - Pendidik menjelaskan bagaimana teknologi seperti Artificial Intelligence (AI), Machine Learning (ML), dan Internet of Things (IoT) akan memengaruhi Ethical Hacking di masa depan. <br> **2. Peran AI dan ML dalam Deteksi Ancaman** <br> - Pendidik menjelaskan penggunaan AI dan ML untuk mendeteksi ancaman secara otomatis dan menganalisis pola serangan yang rumit. <br> **3. Diskusi Kelompok: Mengantisipasi Tantangan Masa Depan** <br> - Siswa berdiskusi tentang tantangan yang mungkin dihadapi dalam menggunakan teknologi baru ini dan bagaimana mereka akan mengatasi tantangan tersebut. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil diskusi mereka tentang peran teknologi masa depan dalam Ethical Hacking dan tantangan yang mungkin muncul.                                                                                             | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai masa depan Ethical Hacking dan teknologi yang akan memengaruhinya melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang teknologi masa depan yang akan mengubah Ethical Hacking dan tantangan yang akan dihadapi. <br> 3. Tugas untuk mencari artikel atau studi kasus yang menunjukkan penerapan AI, ML, atau IoT dalam Ethical Hacking. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                               | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Future of Ethical Hacking](https://www.youtube.com/watch?v=example5) – Video ini menjelaskan tren masa depan dalam Ethical Hacking dan teknologi yang berpotensi memengaruhi bidang keamanan siber.
+- **Artikel Online**: [Future Technologies in Cybersecurity](https://www.cybersecurityguide.org/future-trends/) – Artikel ini memberikan informasi tentang teknologi seperti AI, ML, dan IoT yang akan memainkan peran penting dalam masa depan Ethical Hacking.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                     | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami peran teknologi masa depan dalam Ethical Hacking?                      | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat mengidentifikasi tantangan yang mungkin muncul dengan teknologi ini?      | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda tertarik untuk belajar lebih lanjut tentang AI dan ML dalam keamanan siber?     | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                         | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 12: Pengujian Penetrasi (Penetration Testing) dalam Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami konsep dan tahapan pengujian penetrasi sebagai bagian dari Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video tentang proses pengujian penetrasi (penetration testing) dan mengapa penting bagi keamanan jaringan (contoh: [Introduction to Penetration Testing](https://www.youtube.com/watch?v=example6)). <br> - Pendidik meminta siswa membaca artikel mengenai tujuan dan manfaat pengujian penetrasi dalam mendeteksi kerentanan jaringan ([What is Penetration Testing?](https://www.securitywebsite.com/penetration-testing)). <br> - Diskusi singkat mengenai pemahaman siswa tentang uji penetrasi. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Tahapan Pengujian Penetrasi** <br> - Pendidik menjelaskan tahapan utama dalam pengujian penetrasi, seperti perencanaan, pengintaian (reconnaissance), eksploitasi, dan pelaporan. <br> **2. Teknik Pengujian Penetrasi** <br> - Pendidik membahas teknik-teknik umum yang digunakan dalam pengujian penetrasi, seperti social engineering, scanning, dan eksploitasi kerentanan. <br> **3. Diskusi Kelompok: Studi Kasus Pengujian Penetrasi** <br> - Siswa berdiskusi dalam kelompok untuk menganalisis studi kasus pengujian penetrasi pada sistem perusahaan dan mendiskusikan teknik yang mungkin digunakan dan risiko yang teridentifikasi. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil analisis mereka di depan kelas, mencakup teknik yang digunakan, hasil temuan, dan rekomendasi untuk perbaikan keamanan.                                | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi mengenai pemahaman mereka tentang tahapan pengujian penetrasi melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang pentingnya pengujian penetrasi dalam menjaga keamanan jaringan, serta teknik-teknik yang digunakan dalam pengujian tersebut. <br> 3. Tugas untuk mencari contoh laporan hasil pengujian penetrasi dari sumber daring untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                          | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Introduction to Penetration Testing](https://www.youtube.com/watch?v=example6) – Video ini memberikan pengantar tentang konsep pengujian penetrasi dan proses yang dilalui untuk mengidentifikasi kerentanan dalam sistem.
+- **Artikel Online**: [What is Penetration Testing?](https://www.securitywebsite.com/penetration-testing) – Artikel ini menjelaskan tujuan dan tahapan pengujian penetrasi dalam rangka mengidentifikasi dan memitigasi risiko keamanan.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                     | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami tahapan pengujian penetrasi?                                           | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat mengidentifikasi teknik yang digunakan dalam pengujian penetrasi?          | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam menganalisis kerentanan melalui pengujian penetrasi?| [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                         | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+### **Pertemuan 13: Analisis Kerentanan dalam Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami cara melakukan analisis kerentanan dalam jaringan dan sistem. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video tentang proses analisis kerentanan dalam jaringan dan pentingnya identifikasi kerentanan dalam menjaga keamanan siber (contoh: [Understanding Vulnerability Analysis](https://www.youtube.com/watch?v=example7)). <br> - Pendidik meminta siswa membaca artikel mengenai jenis-jenis kerentanan yang umum terjadi dan alat yang digunakan untuk analisis kerentanan ([Vulnerability Analysis Tools](https://www.cybersecurityguide.org/vulnerability-tools)). <br> - Diskusi singkat tentang pengalaman siswa terkait analisis kerentanan. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Analisis Kerentanan** <br> - Pendidik menjelaskan konsep analisis kerentanan dan perannya dalam mengidentifikasi celah keamanan sebelum dieksploitasi oleh penyerang. <br> **2. Alat untuk Analisis Kerentanan** <br> - Pendidik memperkenalkan beberapa alat yang umum digunakan dalam analisis kerentanan, seperti Nessus, OpenVAS, dan Qualys. <br> **3. Diskusi Kelompok: Studi Kasus Analisis Kerentanan** <br> - Siswa bekerja dalam kelompok untuk menganalisis studi kasus yang melibatkan kerentanan dalam sistem dan berdiskusi tentang pendekatan analisis yang bisa digunakan serta alat yang cocok. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil analisis mereka, menjelaskan kerentanan yang ditemukan, dan alat yang digunakan untuk identifikasi serta rekomendasi untuk perbaikan keamanan.                             | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai proses analisis kerentanan melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang pentingnya analisis kerentanan dan alat yang digunakan dalam proses ini. <br> 3. Tugas untuk mencari informasi tentang kerentanan terbaru yang dilaporkan dalam sistem atau perangkat lunak untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                             | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Understanding Vulnerability Analysis](https://www.youtube.com/watch?v=example7) – Video ini memberikan pengantar tentang analisis kerentanan, tujuannya, dan bagaimana proses ini dapat melindungi jaringan dari serangan.
+- **Artikel Online**: [Vulnerability Analysis Tools](https://www.cybersecurityguide.org/vulnerability-tools) – Artikel ini menjelaskan berbagai alat yang digunakan dalam analisis kerentanan serta cara kerja masing-masing alat.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                         | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ----------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami konsep dan tujuan analisis kerentanan?                                     | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat mengidentifikasi alat yang digunakan dalam analisis kerentanan?               | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam menganalisis kerentanan dalam sistem jaringan?      | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                             | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+### **Pertemuan 14: Eksploitasi dan Post-Exploitation dalam Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami konsep eksploitasi dan tindakan yang dilakukan setelah eksploitasi (post-exploitation) dalam Ethical Hacking. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video tentang teknik eksploitasi dalam pengujian keamanan dan tindakan setelah eksploitasi (contoh: [Ethical Hacking Exploitation Techniques](https://www.youtube.com/watch?v=example8)). <br> - Pendidik meminta siswa membaca artikel tentang pentingnya post-exploitation untuk memastikan keamanan jaringan tetap terjaga setelah eksploitasi ([Post-Exploitation in Cybersecurity](https://www.cybersecuritywebsite.com/post-exploitation)). <br> - Diskusi singkat mengenai pemahaman siswa tentang eksploitasi dan post-exploitation. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Eksploitasi dalam Ethical Hacking** <br> - Pendidik menjelaskan konsep eksploitasi, yaitu memanfaatkan kerentanan yang ditemukan dalam sistem untuk menguji sejauh mana celah keamanan dapat dieksploitasi. <br> **2. Teknik Post-Exploitation** <br> - Pendidik membahas teknik yang dilakukan setelah eksploitasi, seperti mengumpulkan bukti, mencatat perubahan, dan memastikan langkah-langkah mitigasi diterapkan. <br> **3. Diskusi Kelompok: Simulasi Eksploitasi dan Post-Exploitation** <br> - Siswa bekerja dalam kelompok untuk mensimulasikan proses eksploitasi pada kasus studi dan mendiskusikan langkah-langkah post-exploitation yang perlu dilakukan untuk mengamankan jaringan. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil simulasi mereka, mencakup teknik eksploitasi yang digunakan dan langkah-langkah post-exploitation yang diterapkan untuk memastikan keamanan.                           | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pemahaman mereka mengenai eksploitasi dan post-exploitation melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang pentingnya eksploitasi dalam pengujian keamanan serta langkah-langkah yang harus dilakukan setelah eksploitasi. <br> 3. Tugas untuk mencari contoh kasus eksploitasi dan post-exploitation yang berhasil dilakukan oleh ethical hacker untuk dibahas pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                          | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Ethical Hacking Exploitation Techniques](https://www.youtube.com/watch?v=example8) – Video ini memberikan pengantar tentang teknik eksploitasi dalam pengujian keamanan dan tindakan setelah eksploitasi.
+- **Artikel Online**: [Post-Exploitation in Cybersecurity](https://www.cybersecuritywebsite.com/post-exploitation) – Artikel ini menjelaskan pentingnya tindakan post-exploitation dalam menjaga keamanan jaringan setelah kerentanan dieksploitasi.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                         | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ----------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami konsep eksploitasi dan post-exploitation?                                  | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda dapat mengidentifikasi teknik yang dilakukan dalam post-exploitation?               | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam mengamankan jaringan setelah proses eksploitasi?    | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                             | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+### **Pertemuan 15: Alat Penting dalam Ethical Hacking (Metasploit, Burp Suite, Wireshark)**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami penggunaan dan fungsi alat-alat penting dalam Ethical Hacking, seperti Metasploit, Burp Suite, dan Wireshark. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat yang memperkenalkan alat-alat ini dan fungsinya dalam analisis keamanan jaringan (contoh: [Essential Ethical Hacking Tools](https://www.youtube.com/watch?v=example9)). <br> - Pendidik meminta siswa membaca artikel tentang peran Metasploit, Burp Suite, dan Wireshark dalam Ethical Hacking ([Essential Tools for Ethical Hackers](https://www.cybersecuritywebsite.com/essential-tools)). <br> - Diskusi singkat tentang pengalaman siswa menggunakan alat-alat ini (jika ada). | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Metasploit** <br> - Pendidik menjelaskan fungsi Metasploit sebagai alat eksploitasi yang digunakan untuk menguji kerentanan dalam sistem jaringan. <br> **2. Penggunaan Burp Suite dalam Pengujian Keamanan Web** <br> - Pendidik mendemonstrasikan cara menggunakan Burp Suite untuk menganalisis keamanan aplikasi web dan mengidentifikasi celah keamanan pada permintaan HTTP dan data pengguna. <br> **3. Wireshark untuk Analisis Lalu Lintas Jaringan** <br> - Pendidik menjelaskan penggunaan Wireshark untuk menangkap dan menganalisis lalu lintas jaringan guna mendeteksi aktivitas mencurigakan. <br> **4. Diskusi Kelompok dan Praktik**: <br> - Siswa dibagi menjadi kelompok untuk mencoba ketiga alat tersebut di lingkungan virtual, dengan tugas mengidentifikasi kerentanan sederhana menggunakan Metasploit, Burp Suite, dan Wireshark. Setiap kelompok mendiskusikan temuan mereka.                             | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang pengalaman menggunakan alat-alat ini melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang peran penting Metasploit, Burp Suite, dan Wireshark dalam proses Ethical Hacking. <br> 3. Tugas untuk meneliti alat Ethical Hacking tambahan yang sering digunakan di industri dan mempersiapkan presentasi singkat pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                                                | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Essential Ethical Hacking Tools](https://www.youtube.com/watch?v=example9) – Video ini memberikan gambaran tentang Metasploit, Burp Suite, dan Wireshark, serta peran penting alat-alat ini dalam Ethical Hacking.
+- **Artikel Online**: [Essential Tools for Ethical Hackers](https://www.cybersecuritywebsite.com/essential-tools) – Artikel ini menjelaskan cara kerja dan manfaat Metasploit, Burp Suite, dan Wireshark dalam pengujian keamanan jaringan.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                                   | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami fungsi Metasploit, Burp Suite, dan Wireshark?                                       | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam menggunakan alat-alat ini untuk pengujian keamanan jaringan? | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda tertarik untuk mempelajari alat-alat tambahan dalam Ethical Hacking?                         | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                                     | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 16: Penggunaan dan Konfigurasi Alat Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik mampu menggunakan dan melakukan konfigurasi dasar alat-alat dalam Ethical Hacking, seperti Metasploit, Burp Suite, dan Wireshark. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video singkat yang menjelaskan penggunaan alat-alat ini dalam pengujian keamanan jaringan (contoh: [Configuring Ethical Hacking Tools](https://www.youtube.com/watch?v=example10)). <br> - Pendidik meminta siswa membaca artikel mengenai langkah-langkah konfigurasi alat Ethical Hacking ([Guide to Configuring Hacking Tools](https://www.cybersecuritywebsite.com/configuring-tools)). <br> - Diskusi singkat tentang tantangan dalam mengonfigurasi alat keamanan. | 20 menit          |
+| **Kegiatan Inti**    | **1. Konfigurasi Metasploit untuk Pengujian Keamanan** <br> - Pendidik menjelaskan cara mengatur Metasploit untuk mengidentifikasi dan mengeksploitasi kerentanan dalam jaringan. <br> - Pendidik memberikan contoh konfigurasi dasar Metasploit untuk simulasi eksploitasi kerentanan. <br> **2. Pengaturan Burp Suite untuk Pengujian Web** <br> - Pendidik membimbing siswa dalam mengonfigurasi Burp Suite untuk menganalisis aplikasi web, termasuk pengaturan proxy dan pemantauan lalu lintas HTTP. <br> **3. Konfigurasi Wireshark untuk Pemantauan Lalu Lintas** <br> - Pendidik mendemonstrasikan konfigurasi dasar Wireshark untuk menangkap paket data dan memfilter lalu lintas jaringan yang relevan. <br> **4. Praktik Kelompok dan Diskusi**: <br> - Siswa dibagi menjadi kelompok untuk mencoba masing-masing konfigurasi alat tersebut dan mendiskusikan hasil pengujian mereka, termasuk kendala yang dihadapi dan hasil yang diperoleh. | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi mengenai pengalaman mereka dalam konfigurasi alat Ethical Hacking melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang langkah-langkah konfigurasi Metasploit, Burp Suite, dan Wireshark serta pentingnya pengaturan yang benar dalam pengujian keamanan. <br> 3. Tugas untuk mendokumentasikan langkah-langkah konfigurasi yang mereka lakukan sebagai laporan singkat untuk dikumpulkan pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                       | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Configuring Ethical Hacking Tools](https://www.youtube.com/watch?v=example10) – Video ini memberikan panduan dasar dalam konfigurasi alat Ethical Hacking seperti Metasploit, Burp Suite, dan Wireshark.
+- **Artikel Online**: [Guide to Configuring Hacking Tools](https://www.cybersecuritywebsite.com/configuring-tools) – Artikel ini menyediakan langkah-langkah konfigurasi untuk beberapa alat utama yang digunakan dalam Ethical Hacking.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                                   | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami langkah-langkah konfigurasi dasar Metasploit, Burp Suite, dan Wireshark?             | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih percaya diri dalam menggunakan dan mengonfigurasi alat-alat ini untuk keamanan? | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda tertarik untuk mempelajari konfigurasi lanjutan dari alat Ethical Hacking ini?               | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                                     | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 17: Tantangan dan Tren Terbaru dalam Ethical Hacking**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami tantangan terkini dalam Ethical Hacking serta tren terbaru dalam industri keamanan siber. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video yang membahas tren terbaru dalam keamanan siber dan tantangan yang dihadapi oleh ethical hacker di era digital (contoh: [Cybersecurity Trends and Challenges](https://www.youtube.com/watch?v=example11)). <br> - Pendidik meminta siswa membaca artikel tentang evolusi ancaman keamanan siber dan adaptasi teknik hacking ([Latest Trends in Cybersecurity](https://www.cybersecuritywebsite.com/latest-trends)). <br> - Diskusi singkat tentang pemahaman siswa terkait tantangan di bidang keamanan jaringan. | 20 menit          |
+| **Kegiatan Inti**    | **1. Pengenalan Tantangan Terkini dalam Ethical Hacking** <br> - Pendidik menjelaskan berbagai tantangan yang dihadapi ethical hacker saat ini, termasuk serangan yang semakin kompleks dan alat yang terus berkembang. <br> **2. Tren Terbaru dalam Teknik dan Metodologi Ethical Hacking** <br> - Pendidik membahas perkembangan teknik hacking seperti machine learning dalam keamanan siber, penggunaan AI untuk mendeteksi ancaman, dan peningkatan eksploitasi zero-day vulnerabilities. <br> **3. Diskusi Kelompok: Studi Kasus Tantangan dan Tren** <br> - Siswa bekerja dalam kelompok untuk menganalisis studi kasus yang berkaitan dengan tren atau tantangan tertentu di bidang keamanan siber dan berdiskusi mengenai teknik yang diperlukan untuk mengatasi tantangan tersebut. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil analisis mereka mengenai tantangan yang dipelajari serta langkah-langkah yang bisa dilakukan oleh ethical hacker untuk menghadapinya. | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang tantangan yang mereka pahami dan tren baru yang menarik minat mereka melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang tantangan dan tren terbaru dalam Ethical Hacking, menekankan pentingnya adaptasi terhadap perkembangan teknologi dan ancaman. <br> 3. Tugas untuk meneliti salah satu tren atau tantangan yang dipelajari dan mempersiapkan presentasi singkat pada pertemuan berikutnya. <br> 4. Penutupan dengan doa.                                                                                                                                                                                                                       | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Cybersecurity Trends and Challenges](https://www.youtube.com/watch?v=example11) – Video ini memberikan wawasan tentang tren terbaru dalam keamanan siber dan tantangan yang dihadapi oleh ethical hacker.
+- **Artikel Online**: [Latest Trends in Cybersecurity](https://www.cybersecuritywebsite.com/latest-trends) – Artikel ini membahas tentang evolusi ancaman dalam keamanan siber serta tren yang mempengaruhi strategi ethical hacking.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                                   | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami tantangan terkini yang dihadapi dalam Ethical Hacking?                               | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda mengetahui beberapa tren terbaru dalam teknik Ethical Hacking?                                | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih siap untuk menghadapi perkembangan dalam dunia keamanan siber?                   | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                                     | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                     | **Jawaban** |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                      |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                  |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                           |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                        |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                          |             |
+
+---
+
+### **Pertemuan 18: Masa Depan Ethical Hacking dalam Keamanan Jaringan**
+
+---
+
+| **Tahapan**          | **Aktivitas Pembelajaran**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **Alokasi Waktu** |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| **Pendahuluan**      | 1. Pendidik membuka pembelajaran dengan salam, doa, dan melakukan presensi. <br> 2. Pendidik menyampaikan tujuan pembelajaran: peserta didik memahami peran dan masa depan Ethical Hacking dalam keamanan jaringan, termasuk bagaimana teknologi baru akan membentuk keamanan siber di masa mendatang. <br> 3. **Apersepsi**: <br> - Pendidik menunjukkan video yang membahas bagaimana perkembangan teknologi seperti AI, IoT, dan 5G akan memengaruhi Ethical Hacking di masa depan (contoh: [Future of Ethical Hacking](https://www.youtube.com/watch?v=example12)). <br> - Pendidik meminta siswa membaca artikel tentang masa depan keamanan siber dan Ethical Hacking ([The Future of Cybersecurity](https://www.cybersecuritywebsite.com/future-of-cybersecurity)). <br> - Diskusi singkat tentang bagaimana siswa melihat peran Ethical Hacking di masa depan. | 20 menit          |
+| **Kegiatan Inti**    | **1. Eksplorasi Peran AI dan Otomasi dalam Ethical Hacking** <br> - Pendidik menjelaskan bagaimana AI dan otomasi dapat mempercepat proses Ethical Hacking dan mengidentifikasi ancaman dengan lebih efisien. <br> **2. Tantangan dan Peluang dari Teknologi Baru** <br> - Pendidik mendiskusikan dampak teknologi seperti IoT, 5G, dan Blockchain terhadap keamanan jaringan dan Ethical Hacking. <br> **3. Diskusi Kelompok: Strategi Masa Depan dalam Ethical Hacking** <br> - Siswa bekerja dalam kelompok untuk menganalisis satu teknologi yang berpotensi mengubah praktik Ethical Hacking dan mendiskusikan bagaimana Ethical Hacking perlu beradaptasi. <br> **4. Presentasi Hasil Diskusi**: <br> - Setiap kelompok mempresentasikan hasil analisis mereka mengenai peran teknologi baru dalam Ethical Hacking dan strategi yang perlu disiapkan oleh ethical hacker untuk menghadapi masa depan. | 120 menit         |
+| **Kegiatan Penutup** | 1. Pendidik meminta siswa untuk mengisi refleksi tentang wawasan mereka terhadap masa depan Ethical Hacking melalui link yang disediakan. <br> 2. Pendidik merangkum materi tentang peran Ethical Hacking di masa depan dan bagaimana ethical hacker harus siap beradaptasi terhadap teknologi baru. <br> 3. Tugas akhir berupa esai singkat tentang prediksi dan tantangan yang akan dihadapi oleh ethical hacker dalam sepuluh tahun mendatang, dikumpulkan sebagai bagian dari penilaian akhir. <br> 4. Penutupan dengan doa dan ucapan selamat atas pencapaian pembelajaran selama satu semester.                                                                                                                                                                                                                       | 10 menit          |
+
+---
+
+### **Catatan Sumber Referensi**
+- **Video YouTube**: [Future of Ethical Hacking](https://www.youtube.com/watch?v=example12) – Video ini memberikan wawasan tentang bagaimana teknologi masa depan seperti AI dan IoT akan mengubah Ethical Hacking dan keamanan jaringan.
+- **Artikel Online**: [The Future of Cybersecurity](https://www.cybersecuritywebsite.com/future-of-cybersecurity) – Artikel ini menjelaskan tren masa depan dalam keamanan siber dan bagaimana ethical hacker harus beradaptasi dengan teknologi baru.
+
+---
+
+### **Refleksi Peserta Didik dan Pendidik**
+
+| **Refleksi Peserta Didik** | **Pertanyaan Refleksi**                                                                                       | **Baik** | **Cukup** | **Kurang** |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------- | -------- | --------- | ---------- |
+|                            | Apakah Anda memahami bagaimana teknologi baru akan memengaruhi Ethical Hacking di masa depan?                 | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda merasa lebih siap untuk memahami perkembangan teknologi yang relevan dengan Ethical Hacking?       | [ ]      | [ ]       | [ ]        |
+|                            | Apakah Anda tertarik untuk mendalami lebih jauh peran Ethical Hacking dalam dunia yang terus berkembang ini?  | [ ]      | [ ]       | [ ]        |
+|                            | Apa yang paling menarik dari pembelajaran hari ini?                                                           | [ ]      | [ ]       | [ ]        |
+
+| **Refleksi Pendidik**      | **Pertanyaan**                                                                                                                                                                               | **Jawaban** |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 1                          | Apakah pemilihan media pembelajaran telah mencerminkan tujuan pembelajaran yang akan dicapai?                                                                                              |             |
+| 2                          | Apakah gaya penyampaian materi mampu ditangkap oleh peserta didik?                                                                                                                          |             |
+| 3                          | Apakah keseluruhan pembelajaran dapat memberikan makna pembelajaran yang hendak dicapai?                                                                                                   |             |
+| 4                          | Apakah pemilihan metode pembelajaran sudah efektif untuk menerjemahkan tujuan pembelajaran?                                                                                                |             |
+| 5                          | Apakah pelaksanaan pelajaran hari ini dapat memberikan semangat kepada peserta didik untuk lebih antusias dalam pembelajaran selanjutnya?                                                 |             |
+
+---
+
+### **Lembar Kerja**
+
+| **Komponen**                                   | **Deskripsi**                                                                                                                               | **Tugas**                                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Lembar Kerja: Konsep Dasar Ethical Hacking**  | Berisi kegiatan untuk memahami dasar-dasar ethical hacking, termasuk definisi, tujuan, dan peran ethical hacker dalam keamanan jaringan. | **Pengertian Ethical Hacking**: <br> 1. Jelaskan apa yang dimaksud dengan ethical hacking dan perbedaannya dengan hacking ilegal. <br> 2. Apa saja peran dan tanggung jawab seorang ethical hacker? <br><br> **Proses Ethical Hacking**: <br> 1. Sebutkan tahapan utama dalam proses ethical hacking. |
+| **Teknik-Teknik Ethical Hacking**               | Melibatkan siswa untuk mempelajari teknik utama dalam ethical hacking, seperti penetration testing, analisis kerentanan, dan eksploitasi. | **Analisis Teknik**: <br> 1. Jelaskan apa yang dimaksud dengan penetration testing dan tujuannya dalam keamanan jaringan. <br> 2. Apa yang dilakukan dalam tahap post-exploitation dan mengapa itu penting?<br><br> **Studi Kasus**: <br> 1. Berikan contoh situasi di mana ethical hacking dapat membantu mencegah serangan. |
+| **Alat dan Sumber Daya dalam Ethical Hacking**  | Mempelajari berbagai alat penting dalam ethical hacking dan cara penggunaannya.                                                           | **Penggunaan Alat**: <br> 1. Jelaskan fungsi utama dari Metasploit, Burp Suite, dan Wireshark dalam ethical hacking. <br> 2. Cari informasi tentang pelatihan atau sertifikasi ethical hacking dan jelaskan keuntungannya.                                                                                           |
+| **Tantangan dan Tren Terbaru Ethical Hacking** | Mendorong siswa untuk memahami tantangan modern dalam ethical hacking serta tren masa depan dalam keamanan siber.                          | **Diskusi Tren**: <br> 1. Apa tantangan terbesar yang dihadapi ethical hacker saat ini? <br> 2. Bagaimana perkembangan teknologi baru dapat mempengaruhi ethical hacking? <br> **Prediksi Masa Depan**: <br> 1. Berikan prediksi tentang masa depan ethical hacking dan peranannya dalam keamanan jaringan.              |
+
+---
+
+### **Panduan Praktikum**
+
+| **Komponen**                        | **Deskripsi**                                                                                                                                                                                                                                       | **Langkah-langkah Praktikum**                                                                                                                                                                                                                                                                                                               |
+|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Dasar-dasar Ethical Hacking**     | Panduan untuk memulai dengan memahami peran ethical hacker, termasuk pengenalan kode etik dan tanggung jawab mereka.                                                                                                                                 | 1. Bacalah definisi dan peran ethical hacker serta perbedaan dengan hacker ilegal. <br> 2. Diskusikan dalam kelompok mengenai tanggung jawab ethical hacker dalam menjaga keamanan. <br> 3. Catat hasil diskusi tentang batasan yang harus dipatuhi ethical hacker dan pentingnya etika dalam pekerjaan mereka.                               |
+| **Penggunaan Alat Ethical Hacking** | Panduan untuk mengenal dan mencoba alat seperti Metasploit, Burp Suite, dan Wireshark yang sering digunakan dalam penetration testing dan analisis kerentanan.                                                                                       | 1. Instal dan buka alat Metasploit dan Wireshark di lingkungan lab. <br> 2. Pelajari antarmuka dan fitur dasar alat-alat ini. <br> 3. Simulasikan percobaan scanning jaringan sederhana dengan Wireshark dan amati lalu lintas jaringan. <br> 4. Dokumentasikan hasil dan pelajaran dari setiap alat yang digunakan.                             |
+| **Praktik Penetration Testing**     | Melakukan simulasi penetration testing untuk memahami proses dan tujuannya dalam mengidentifikasi kelemahan keamanan jaringan.                                                                                                                       | 1. Pilih skenario jaringan sederhana dan tentukan target testing. <br> 2. Gunakan alat seperti Metasploit untuk memeriksa kerentanan. <br> 3. Analisis hasil testing untuk menemukan kelemahan yang mungkin terjadi. <br> 4. Buat laporan yang mencakup tahapan penetration testing dan kesimpulan dari hasil testing.                        |
+| **Analisis Tren dan Tantangan**     | Mengidentifikasi tren terkini dalam ethical hacking dan membahas tantangan yang dihadapi dalam melindungi jaringan dari ancaman yang berkembang.                                                                                                      | 1. Teliti salah satu tren terbaru dalam ethical hacking (misalnya, cloud security, IoT). <br> 2. Buat analisis singkat tentang tantangan yang terkait dengan tren tersebut. <br> 3. Diskusikan dalam kelompok dan catat ide-ide tentang bagaimana ethical hacker dapat mengatasi tantangan di masa depan.                                     |
+
+---
+
+### **Asesmen Lanjutan**
+
+| **Komponen Asesmen**                            | **Deskripsi Asesmen**                                                                                                                                  | **Skor Maksimal** | **Kriteria Penilaian**                                                                                                                                                                                                                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Pemahaman Konsep Ethical Hacking**         | Menilai pemahaman siswa tentang ethical hacking, perannya, dan pentingnya dalam keamanan jaringan.                                                     | 20                | **Sangat Baik** (17-20): Pemahaman mendalam tentang konsep ethical hacking dan tanggung jawabnya. <br> **Baik** (13-16): Pemahaman memadai dengan penjelasan yang relevan. <br> **Cukup** (9-12): Penjelasan kurang lengkap. <br> **Kurang** (0-8): Pemahaman belum memadai. |
+| **2. Data dan Dokumentasi Penggunaan Alat**     | Menilai kelengkapan dan ketepatan penggunaan alat dalam ethical hacking, serta dokumentasi hasil yang akurat.                                          | 15                | **Sangat Baik** (13-15): Dokumentasi lengkap dan tepat dari hasil penggunaan alat. <br> **Baik** (10-12): Dokumentasi sebagian besar lengkap. <br> **Cukup** (7-9): Data tidak lengkap. <br> **Kurang** (0-6): Dokumentasi minim atau kurang jelas.                          |
+| **3. Analisis Risiko dan Rekomendasi Keamanan** | Mampu mengidentifikasi risiko dari hasil pengujian dan memberikan rekomendasi keamanan yang relevan.                                                   | 20                | **Sangat Baik** (17-20): Analisis mendalam dengan rekomendasi efektif. <br> **Baik** (13-16): Rekomendasi cukup lengkap. <br> **Cukup** (9-12): Rekomendasi ada tetapi kurang jelas. <br> **Kurang** (0-8): Rekomendasi minim atau tidak ada.                                |
+| **4. Keterampilan Praktik dan Penggunaan Alat** | Menilai keterampilan teknis dalam penggunaan alat ethical hacking dan simulasi teknik, sesuai prosedur yang diinstruksikan.                            | 15                | **Sangat Baik** (13-15): Teknik penggunaan alat sangat baik, semua prosedur dilakukan benar. <br> **Baik** (10-12): Teknik memadai, ada beberapa kekurangan. <br> **Cukup** (7-9): Keterampilan praktik minim. <br> **Kurang** (0-6): Tidak memadai.                         |
+| **5. Refleksi dan Laporan Akhir**               | Kualitas laporan akhir serta refleksi siswa terhadap pembelajaran, tantangan yang dihadapi, dan pemahaman yang diperoleh dari praktik ethical hacking. | 15                | **Sangat Baik** (13-15): Laporan komprehensif dengan refleksi mendalam. <br> **Baik** (10-12): Laporan cukup baik dengan refleksi yang relevan. <br> **Cukup** (7-9): Laporan kurang rinci. <br> **Kurang** (0-6): Laporan tidak lengkap atau refleksi minim.                |
+```
+
+```
+
+---
+
+### Lembar Ceklist Penilaian Ethical Hacking
+
+| **Nama Siswa**       | **Pertemuan Ke-** | **Topik**                               | **Kegiatan Pembelajaran**                                           | **Ceklist Penilaian**                                                                                               |
+|----------------------|-------------------|-----------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+|                      | 1                 | Pengantar Ethical Hacking               | - Diskusi Etika dalam Ethical Hacking                                | [ ] Memahami perbedaan ethical dan illegal hacking <br> [ ] Berkontribusi dalam refleksi kelompok                    |
+|                      | 2                 | Metodologi dan Proses Ethical Hacking   | - Diskusi kelompok tiap langkah metode                                | [ ] Memahami proses ethical hacking <br> [ ] Aktif berdiskusi dalam kelompok                                         |
+|                      | 3                 | Pengujian Penetrasi                     | - Praktik dasar pengujian penetrasi                                   | [ ] Melakukan praktik pengujian penetrasi <br> [ ] Memahami tahap-tahap dasar pengujian penetrasi                    |
+|                      | 4                 | Analisis Kerentanan                     | - Identifikasi kerentanan pada jaringan simulasi                     | [ ] Mampu mengidentifikasi kerentanan <br> [ ] Menyusun klasifikasi kerentanan yang ditemukan                       |
+|                      | 5                 | Eksploitasi dan Post-Exploitation       | - Diskusi risiko dan mitigasi                                         | [ ] Memahami teknik eksploitasi <br> [ ] Aktif berdiskusi tentang mitigasi kerentanan                                |
+|                      | 6                 | Alat Metasploit                         | - Praktik menemukan kerentanan menggunakan Metasploit                 | [ ] Dapat menggunakan fitur dasar Metasploit <br> [ ] Memahami proses pencarian kerentanan                           |
+|                      | 7                 | Alat Burp Suite                         | - Pengujian keamanan web menggunakan Burp Suite                      | [ ] Dapat menggunakan Burp Suite <br> [ ] Mengidentifikasi kerentanan aplikasi web                                   |
+|                      | 8                 | Alat Wireshark                          | - Menganalisis lalu lintas jaringan menggunakan Wireshark            | [ ] Memahami cara kerja Wireshark <br> [ ] Mampu melakukan analisis lalu lintas jaringan                             |
+|                      | 9                 | Praktik Pengujian Penetrasi             | - Praktik pengujian penetrasi lengkap pada jaringan simulasi          | [ ] Melakukan pengujian penetrasi <br> [ ] Mengidentifikasi kerentanan yang ditemukan                                |
+|                      | 10                | Konfigurasi Alat                        | - Latihan konfigurasi alat-alat ethical hacking                      | [ ] Menyusun konfigurasi alat pengujian <br> [ ] Mengoptimalkan penggunaan alat                                      |
+|                      | 11                | Sertifikasi Ethical Hacking             | - Diskusi sertifikasi CEH, OSCP, dsb.                                | [ ] Memahami manfaat sertifikasi <br> [ ] Mengetahui persiapan yang diperlukan untuk sertifikasi                     |
+|                      | 12                | Tantangan dalam Dunia Nyata             | - Diskusi tantangan pengujian keamanan                                | [ ] Mengidentifikasi tantangan umum <br> [ ] Mampu mengajukan solusi untuk tiap tantangan                            |
+|                      | 13                | Tren Terbaru dalam Ethical Hacking      | - Diskusi teknik hacking terbaru                                      | [ ] Memahami evolusi teknik hacking <br> [ ] Mengenal ancaman baru dalam ethical hacking                             |
+|                      | 14                | Masa Depan Ethical Hacking              | - Diskusi peran masa depan dalam keamanan jaringan                   | [ ] Memahami perkembangan teknologi <br> [ ] Memprediksi perubahan teknik dan alat Ethical Hacking                   |
+|                      | 15                | Review dan Refleksi                     | - Diskusi kelompok dan refleksi individu                              | [ ] Mengikuti review materi <br> [ ] Mampu merangkum pemahaman secara tertulis                                       |
+|                      | 16                | Ujian Praktik Pengujian Penetrasi       | - Ujian praktik berdasarkan studi kasus                               | [ ] Melakukan ujian praktik <br> [ ] Memahami dan menganalisis hasil pengujian penetrasi                             |
+|                      | 17                | Ujian Teori                             | - Tes tertulis                                                       | [ ] Memahami konsep, teknik, dan alat dalam ethical hacking                                                         |
+|                      | 18                | Evaluasi Akhir dan Diskusi              | - Evaluasi pembelajaran                                              | [ ] Mengikuti diskusi akhir <br> [ ] Mampu menjawab pertanyaan evaluasi dengan pemahaman Ethical Hacking             |
+
+---
+
+### Lembar Penilaian Individu Ethical Hacking
+
+**Nama Siswa:**  
+**Pertemuan:**  
+
+| **Kriteria Penilaian**              | **Deskripsi Penilaian**                                                                                                        | **Skor (1-5)** |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------|
+| Pemahaman Konsep                    | Memahami dasar-dasar dan etika dalam Ethical Hacking                                                                            |                |
+| Kemampuan Analisis                  | Mengidentifikasi dan menganalisis kerentanan dalam jaringan simulasi                                                            |                |
+| Keaktifan dan Partisipasi           | Berpartisipasi aktif dalam diskusi kelompok dan kontribusi dalam setiap pertemuan                                               |                |
+| Penguasaan Alat                     | Dapat menggunakan alat seperti Metasploit, Burp Suite, dan Wireshark untuk pengujian keamanan                                   |                |
+| Penyelesaian Studi Kasus            | Mampu menyelesaikan studi kasus pengujian penetrasi dan mengidentifikasi risiko                                                 |                |
+| Refleksi dan Evaluasi Diri          | Menuliskan refleksi pemahaman dan melakukan evaluasi diri di akhir materi                                                       |                |
+| Persiapan dan Kesiapan Ujian        | Mempersiapkan diri dengan baik untuk ujian teori dan praktik                                                                    |                |
+| Kreativitas dan Pemecahan Masalah   | Mengajukan solusi dalam tantangan ethical hacking dalam dunia nyata                                                             |                |
+| Kualitas Hasil dan Efisiensi        | Menyusun konfigurasi alat secara efisien dan mengoptimalkan proses pengujian                                                    |                |
+| Kemampuan Beradaptasi dengan Tren   | Memahami tren terbaru dan mampu menyesuaikan teknik ethical hacking dengan perkembangan ancaman baru                            |                |
+
+**Catatan Pembimbing:**
+
+---
+
+
+---
+
+### 1. **Penilaian Proyek**
+   - **Deskripsi**: Penilaian ini berfokus pada proyek akhir yang mengharuskan siswa untuk merancang solusi keamanan jaringan berbasis konsep Ethical Hacking. Proyek dapat berupa simulasi atau studi kasus nyata yang melibatkan teknik pengujian penetrasi, analisis kerentanan, dan mitigasi risiko.
+   - **Tujuan**: Untuk menilai kemampuan siswa dalam mengaplikasikan seluruh konsep Ethical Hacking yang telah dipelajari secara menyeluruh, mulai dari tahap perencanaan hingga implementasi dan dokumentasi akhir.
+   - **Langkah-Langkah Penilaian**:
+     1. **Perencanaan**: Siswa membuat rencana yang mencakup analisis kebutuhan, identifikasi kerentanan, dan tujuan keamanan.
+     2. **Implementasi**: Siswa melakukan pengujian penetrasi atau simulasi serangan menggunakan alat seperti Metasploit atau Burp Suite.
+     3. **Dokumentasi**: Siswa mendokumentasikan langkah-langkah, hasil pengujian, dan rekomendasi mitigasi.
+   - **Aspek yang Dinilai**:
+     - Keakuratan dalam mengidentifikasi dan menganalisis kerentanan.
+     - Kualitas solusi keamanan yang diterapkan.
+     - Kemampuan dalam mendokumentasikan proses dan hasil dengan jelas.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Solusi komprehensif dengan dokumentasi sangat baik.
+     - **Skor 3**: Solusi baik, namun dokumentasi perlu sedikit perbaikan.
+     - **Skor 2**: Solusi cukup, tetapi dokumentasi kurang lengkap.
+     - **Skor 1**: Solusi dan dokumentasi kurang memadai.
+
+---
+
+### 2. **Penilaian Portofolio**
+   - **Deskripsi**: Portofolio adalah kumpulan tugas, hasil praktik, refleksi pribadi, dan proyek kecil yang telah diselesaikan sepanjang materi Ethical Hacking.
+   - **Tujuan**: Untuk melihat perkembangan dan pemahaman siswa terhadap konsep-konsep utama Ethical Hacking dari waktu ke waktu.
+   - **Komponen Penilaian**:
+     - **Hasil Praktik**: Hasil dari setiap praktik seperti pengujian penetrasi, analisis kerentanan, dan konfigurasi alat keamanan.
+     - **Refleksi Pribadi**: Catatan refleksi yang menunjukkan pemahaman siswa dan tantangan yang dihadapi.
+     - **Proyek Kecil dan Tugas**: Tugas praktikum seperti identifikasi kerentanan jaringan, eksplorasi alat keamanan, dll.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Portofolio sangat lengkap dan terstruktur, mencerminkan pemahaman mendalam.
+     - **Skor 3**: Portofolio lengkap dan terstruktur dengan baik.
+     - **Skor 2**: Portofolio cukup lengkap tetapi tidak terstruktur dengan baik.
+     - **Skor 1**: Portofolio kurang lengkap dan tidak terstruktur.
+
+---
+
+### 3. **Penilaian Peer Assessment (Penilaian Teman Sebaya)**
+   - **Deskripsi**: Penilaian ini melibatkan siswa untuk memberikan umpan balik dan menilai hasil kerja teman sekelas, terutama dalam tugas praktikum atau proyek kelompok.
+   - **Tujuan**: Untuk melatih siswa dalam memberikan umpan balik yang konstruktif serta meningkatkan keterampilan kolaborasi.
+   - **Langkah-Langkah Penilaian**:
+     1. Siswa diberikan panduan dalam menilai hasil kerja teman, termasuk aspek-aspek teknis dan etika.
+     2. Siswa memberikan umpan balik berdasarkan ketepatan dan kualitas hasil kerja.
+   - **Aspek yang Dinilai**:
+     - Kemampuan mengevaluasi hasil kerja teman dengan objektif.
+     - Kualitas umpan balik yang diberikan.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Umpan balik objektif dan sangat konstruktif.
+     - **Skor 3**: Umpan balik cukup baik dan objektif.
+     - **Skor 2**: Umpan balik kurang obyektif dan terbatas.
+     - **Skor 1**: Umpan balik tidak objektif dan minim.
+
+---
+
+### 4. **Penilaian Keterampilan Praktik Berbasis Kinerja (Performance-Based Assessment)**
+   - **Deskripsi**: Siswa dinilai berdasarkan keterampilan praktis yang ditunjukkan selama praktik seperti konfigurasi alat atau simulasi pengujian penetrasi.
+   - **Tujuan**: Mengukur kemampuan teknis siswa dalam situasi yang mendekati kondisi nyata, seperti kemampuan menggunakan Wireshark untuk analisis lalu lintas atau Metasploit untuk menemukan kerentanan.
+   - **Langkah-Langkah Penilaian**:
+     1. Siswa diberikan tugas praktikum dengan alat keamanan.
+     2. Instruktur menilai keterampilan teknis, ketepatan konfigurasi, dan ketepatan waktu dalam menyelesaikan tugas.
+   - **Aspek yang Dinilai**:
+     - Ketepatan dalam konfigurasi alat.
+     - Kemampuan menyelesaikan tugas dalam waktu yang ditetapkan.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Keterampilan sangat baik, dengan konfigurasi tepat dan efisien.
+     - **Skor 3**: Keterampilan baik, tetapi perlu sedikit perbaikan.
+     - **Skor 2**: Keterampilan cukup, tetapi kurang efisien.
+     - **Skor 1**: Keterampilan tidak memadai dan tugas tidak selesai.
+
+---
+
+### 5. **Penilaian Self-Assessment (Penilaian Diri Sendiri)**
+   - **Deskripsi**: Siswa diminta untuk menilai pemahaman dan kinerja mereka sendiri, terutama setelah menyelesaikan modul utama seperti pengujian penetrasi atau analisis kerentanan.
+   - **Tujuan**: Untuk membantu siswa melakukan refleksi diri mengenai pemahaman konsep Ethical Hacking dan area yang masih perlu ditingkatkan.
+   - **Langkah-Langkah Penilaian**:
+     1. Siswa mengisi lembar self-assessment dengan skala nilai dan catatan reflektif.
+     2. Siswa menilai pemahaman dan keterampilan mereka sendiri secara objektif.
+   - **Aspek yang Dinilai**:
+     - Kemampuan siswa dalam melakukan refleksi diri.
+     - Kesadaran akan kekuatan dan kelemahan pribadi.
+     - Kejelasan dalam mengidentifikasi area untuk perbaikan.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Refleksi diri sangat baik, menunjukkan kesadaran tinggi terhadap kemampuan dan area perbaikan.
+     - **Skor 3**: Refleksi cukup baik dan menunjukkan pemahaman yang jelas tentang area perbaikan.
+     - **Skor 2**: Refleksi kurang mendalam, tetapi menunjukkan keinginan untuk perbaikan.
+     - **Skor 1**: Refleksi minim tanpa rencana perbaikan.
+
+---
+
+Penilaian-penilaian ini memberikan perspektif menyeluruh mengenai kemampuan siswa dalam menguasai konsep dan keterampilan **Ethical Hacking** serta keterampilan reflektif, kolaborasi, dan pengembangan diri.
+
+
+Berikut adalah 40 soal pilihan ganda mengenai **Ethical Hacking** dengan 5 pilihan jawaban dan jawaban yang benar. Topik mencakup dasar-dasar Ethical Hacking, alat-alat, serta metodologi yang umum digunakan dalam bidang ini.
+
+---
+
+### 1. Apa tujuan utama dari ethical hacking?
+   - A. Menghancurkan jaringan perusahaan
+   - B. Mendapatkan keuntungan finansial
+   - C. Menguji dan memperbaiki keamanan sistem
+   - D. Mengakses informasi rahasia tanpa izin
+   - E. Merusak data perusahaan  
+   - **Jawaban: C**
+
+### 2. Teknik berikut yang TIDAK termasuk dalam ethical hacking adalah...
+   - A. Social engineering
+   - B. Phishing
+   - C. Analisis kerentanan
+   - D. Deface
+   - E. Eksploitasi sistem  
+   - **Jawaban: D**
+
+### 3. Dalam ethical hacking, serangan **DoS** bertujuan untuk...
+   - A. Mencuri data
+   - B. Menghentikan layanan
+   - C. Memperbaiki bug
+   - D. Menghapus data
+   - E. Mencari celah keamanan  
+   - **Jawaban: B**
+
+### 4. Alat yang paling sering digunakan untuk melakukan sniffing pada jaringan adalah...
+   - A. Metasploit
+   - B. Burp Suite
+   - C. Wireshark
+   - D. Nmap
+   - E. Cain & Abel  
+   - **Jawaban: C**
+
+### 5. Manakah yang bukan merupakan fase dari proses **ethical hacking**?
+   - A. Reconnaissance
+   - B. Scanning
+   - C. Exploitation
+   - D. Post-exploitation
+   - E. Debugging  
+   - **Jawaban: E**
+
+### 6. Alat berikut yang digunakan untuk pengujian penetrasi aplikasi web adalah...
+   - A. Wireshark
+   - B. Metasploit
+   - C. Burp Suite
+   - D. Nmap
+   - E. Nessus  
+   - **Jawaban: C**
+
+### 7. Istilah **pentesting** merujuk pada...
+   - A. Pemrograman perangkat lunak
+   - B. Pemulihan sistem
+   - C. Pengujian penetrasi
+   - D. Manajemen risiko
+   - E. Pemantauan jaringan  
+   - **Jawaban: C**
+
+### 8. Teknik berikut digunakan untuk mengidentifikasi port yang terbuka dalam jaringan:
+   - A. Port scanning
+   - B. Phishing
+   - C. Cracking
+   - D. Social engineering
+   - E. Malware injection  
+   - **Jawaban: A**
+
+### 9. Kelemahan atau celah dalam sistem keamanan dikenal sebagai...
+   - A. Malware
+   - B. Vulnerability
+   - C. Exploit
+   - D. Payload
+   - E. Shell  
+   - **Jawaban: B**
+
+### 10. Pada serangan **brute force**, seorang hacker mencoba...
+    - A. Mengubah alamat IP
+    - B. Membobol kata sandi
+    - C. Memindai jaringan
+    - D. Menggunakan alat keamanan
+    - E. Menganalisis jaringan  
+    - **Jawaban: B**
+
+### 11. Alat berikut yang sering digunakan untuk eksploitasi adalah...
+    - A. Burp Suite
+    - B. Wireshark
+    - C. Nmap
+    - D. Metasploit
+    - E. Nessus  
+    - **Jawaban: D**
+
+### 12. Teknik social engineering yang sering dilakukan melalui email adalah...
+    - A. Phishing
+    - B. Sniffing
+    - C. Spoofing
+    - D. Cracking
+    - E. Buffer overflow  
+    - **Jawaban: A**
+
+### 13. Alat berikut digunakan untuk scanning kerentanan jaringan:
+    - A. Metasploit
+    - B. Nmap
+    - C. Wireshark
+    - D. Burp Suite
+    - E. Snort  
+    - **Jawaban: B**
+
+### 14. Manakah yang merupakan tujuan utama dari post-exploitation?
+    - A. Menemukan kerentanan
+    - B. Melakukan eksploitasi
+    - C. Menghapus jejak
+    - D. Mengamankan akses yang telah didapatkan
+    - E. Membobol kata sandi  
+    - **Jawaban: D**
+
+### 15. Teknik yang sering digunakan untuk mengecoh pengguna agar memberikan informasi adalah...
+    - A. SQL injection
+    - B. Phishing
+    - C. Sniffing
+    - D. Keylogging
+    - E. Port scanning  
+    - **Jawaban: B**
+
+### 16. Alat berikut sering digunakan untuk mencari kerentanan dalam sistem:
+    - A. Nessus
+    - B. Burp Suite
+    - C. Wireshark
+    - D. Cain & Abel
+    - E. Telnet  
+    - **Jawaban: A**
+
+### 17. Alat berikut yang sering digunakan untuk meretas kata sandi adalah...
+    - A. Burp Suite
+    - B. Nmap
+    - C. Cain & Abel
+    - D. Metasploit
+    - E. Nessus  
+    - **Jawaban: C**
+
+### 18. Teknik berikut memungkinkan hacker untuk menyalin data yang dikirim melalui jaringan:
+    - A. Phishing
+    - B. Sniffing
+    - C. SQL injection
+    - D. Brute force
+    - E. Spoofing  
+    - **Jawaban: B**
+
+### 19. Manakah alat yang dapat menganalisis lalu lintas jaringan?
+    - A. Metasploit
+    - B. Nessus
+    - C. Burp Suite
+    - D. Wireshark
+    - E. Telnet  
+    - **Jawaban: D**
+
+### 20. Teknik yang digunakan untuk menggantikan alamat IP yang asli adalah...
+    - A. Spoofing
+    - B. Phishing
+    - C. SQL injection
+    - D. Brute force
+    - E. Port scanning  
+    - **Jawaban: A**
+
+### 21. Manakah dari berikut ini yang merupakan fase pertama dalam ethical hacking?
+    - A. Exploitation
+    - B. Scanning
+    - C. Reconnaissance
+    - D. Enumeration
+    - E. Spoofing  
+    - **Jawaban: C**
+
+### 22. Alat yang sering digunakan untuk pengujian keamanan aplikasi web adalah...
+    - A. Wireshark
+    - B. Metasploit
+    - C. Burp Suite
+    - D. Cain & Abel
+    - E. Telnet  
+    - **Jawaban: C**
+
+### 23. Istilah untuk perangkat lunak atau kode yang dirancang untuk mengambil alih komputer disebut...
+    - A. Malware
+    - B. Payload
+    - C. Exploit
+    - D. Vulnerability
+    - E. Keylogger  
+    - **Jawaban: A**
+
+### 24. Teknik hacking untuk mengirim permintaan jaringan palsu disebut...
+    - A. Phishing
+    - B. Sniffing
+    - C. Spoofing
+    - D. SQL injection
+    - E. Exploiting  
+    - **Jawaban: C**
+
+### 25. Teknik yang melibatkan penambahan kode berbahaya ke situs web disebut...
+    - A. Spoofing
+    - B. XSS (Cross-Site Scripting)
+    - C. Sniffing
+    - D. Port scanning
+    - E. Enumeration  
+    - **Jawaban: B**
+
+### 26. Apa fungsi utama dari alat Nmap?
+    - A. Menganalisis lalu lintas jaringan
+    - B. Mencari kerentanan jaringan
+    - C. Memecahkan kata sandi
+    - D. Membuat payload
+    - E. Membuat laporan keamanan  
+    - **Jawaban: B**
+
+### 27. Berikut adalah alasan utama untuk melakukan scanning pada jaringan...
+    - A. Menghapus data
+    - B. Melihat lalu lintas data
+    - C. Mengidentifikasi kerentanan
+    - D. Membuat payload
+    - E. Melakukan SQL injection  
+    - **Jawaban: C**
+
+### 28. Teknik yang digunakan untuk mencegah akses yang tidak sah pada sistem disebut...
+    - A. Firewall
+    - B. Phishing
+    - C. Social engineering
+    - D. SQL injection
+    - E. Sniffing  
+    - **Jawaban: A**
+
+### 29. Alat yang memungkinkan analisis paket data disebut...
+    - A. Metasploit
+    - B. Nessus
+    - C. Burp Suite
+    - D. Wireshark
+    - E. Cain & Abel  
+    - **Jawaban: D**
+
+### 30. Istilah "ethical hacking" berarti...
+    - A. Peretasan sistem tanpa izin
+    - B. Pengujian sistem dengan izin untuk tujuan keamanan
+    - C. Menyusup ke jaringan pemerintah
+    - D. Merusak data perusahaan
+    - E. Menginstal malware  
+    - **Jawaban: B**
+
+Berikut adalah 10 soal pilihan ganda terakhir mengenai **Ethical Hacking**:
+
+### 31. Istilah lain untuk pengujian penetrasi adalah...
+   - A. Debugging
+   - B. Vulnerability assessment
+   - C. Penetration testing
+   - D. Risk analysis
+   - E. System audit  
+   - **Jawaban: C**
+
+### 32. Apa yang dilakukan oleh alat **Metasploit**?
+   - A. Mengelola jaringan
+   - B. Menyediakan lingkungan pengujian penetrasi
+   - C. Memindai port yang terbuka
+   - D. Menganalisis lalu lintas jaringan
+   - E. Menghapus malware  
+   - **Jawaban: B**
+
+### 33. Manakah dari berikut ini yang merupakan contoh serangan **SQL injection**?
+   - A. Mengubah tampilan situs web
+   - B. Memasukkan kode SQL berbahaya melalui input pengguna
+   - C. Mengakses server melalui backdoor
+   - D. Mengirim email palsu
+   - E. Mengganti alamat IP  
+   - **Jawaban: B**
+
+### 34. Apa yang dimaksud dengan **buffer overflow**?
+   - A. Menghentikan layanan
+   - B. Mengisi memori yang tidak terpakai
+   - C. Serangan yang terjadi ketika lebih banyak data ditulis ke dalam buffer daripada yang dapat ditangani
+   - D. Memperoleh akses root
+   - E. Mengubah konfigurasi sistem  
+   - **Jawaban: C**
+
+### 35. Teknik yang digunakan untuk memperoleh informasi dari pengguna dengan cara yang menipu adalah...
+   - A. Scanning
+   - B. Sniffing
+   - C. Phishing
+   - D. Cracking
+   - E. Enumeration  
+   - **Jawaban: C**
+
+### 36. Manakah dari berikut ini yang merupakan alat untuk melakukan vulnerability scanning?
+   - A. Nmap
+   - B. Metasploit
+   - C. Nessus
+   - D. Wireshark
+   - E. Burp Suite  
+   - **Jawaban: C**
+
+### 37. Istilah untuk pengujian yang dilakukan secara rutin untuk memastikan keamanan sistem adalah...
+   - A. Penetration testing
+   - B. Red teaming
+   - C. Blue teaming
+   - D. Continuous testing
+   - E. Ethical hacking  
+   - **Jawaban: D**
+
+### 38. Alat yang dapat digunakan untuk mendeteksi dan mencegah intrusi adalah...
+   - A. Firewall
+   - B. Virus scanner
+   - C. Network sniffer
+   - D. Password cracker
+   - E. Network analyzer  
+   - **Jawaban: A**
+
+### 39. Apa yang dimaksud dengan **two-factor authentication** (2FA)?
+   - A. Penggunaan satu kata sandi
+   - B. Sistem yang hanya memerlukan username
+   - C. Memerlukan dua bentuk identifikasi untuk mengakses akun
+   - D. Enkripsi data
+   - E. Pengujian kerentanan  
+   - **Jawaban: C**
+
+### 40. Teknik di mana hacker menyusup ke sistem dan mengumpulkan informasi tanpa terdeteksi adalah...
+   - A. Active reconnaissance
+   - B. Passive reconnaissance
+   - C. Phishing
+   - D. Social engineering
+   - E. Denial of Service  
+   - **Jawaban: B**
+
+---
+
+Dengan 40 soal ini, Anda dapat mengevaluasi pemahaman siswa tentang konsep-konsep dasar dalam **Ethical Hacking**. Setiap soal dilengkapi dengan pilihan jawaban dan jawaban yang benar untuk memudahkan penilaian.
+```
+
+```
+
+---
+
+### Lembar Ceklist Penilaian Ethical Hacking
+
+| **Nama Siswa**       | **Pertemuan Ke-** | **Topik**                               | **Kegiatan Pembelajaran**                                           | **Ceklist Penilaian**                                                                                               |
+|----------------------|-------------------|-----------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+|                      | 1                 | Pengantar Ethical Hacking               | - Diskusi Etika dalam Ethical Hacking                                | [ ] Memahami perbedaan ethical dan illegal hacking <br> [ ] Berkontribusi dalam refleksi kelompok                    |
+|                      | 2                 | Metodologi dan Proses Ethical Hacking   | - Diskusi kelompok tiap langkah metode                                | [ ] Memahami proses ethical hacking <br> [ ] Aktif berdiskusi dalam kelompok                                         |
+|                      | 3                 | Pengujian Penetrasi                     | - Praktik dasar pengujian penetrasi                                   | [ ] Melakukan praktik pengujian penetrasi <br> [ ] Memahami tahap-tahap dasar pengujian penetrasi                    |
+|                      | 4                 | Analisis Kerentanan                     | - Identifikasi kerentanan pada jaringan simulasi                     | [ ] Mampu mengidentifikasi kerentanan <br> [ ] Menyusun klasifikasi kerentanan yang ditemukan                       |
+|                      | 5                 | Eksploitasi dan Post-Exploitation       | - Diskusi risiko dan mitigasi                                         | [ ] Memahami teknik eksploitasi <br> [ ] Aktif berdiskusi tentang mitigasi kerentanan                                |
+|                      | 6                 | Alat Metasploit                         | - Praktik menemukan kerentanan menggunakan Metasploit                 | [ ] Dapat menggunakan fitur dasar Metasploit <br> [ ] Memahami proses pencarian kerentanan                           |
+|                      | 7                 | Alat Burp Suite                         | - Pengujian keamanan web menggunakan Burp Suite                      | [ ] Dapat menggunakan Burp Suite <br> [ ] Mengidentifikasi kerentanan aplikasi web                                   |
+|                      | 8                 | Alat Wireshark                          | - Menganalisis lalu lintas jaringan menggunakan Wireshark            | [ ] Memahami cara kerja Wireshark <br> [ ] Mampu melakukan analisis lalu lintas jaringan                             |
+|                      | 9                 | Praktik Pengujian Penetrasi             | - Praktik pengujian penetrasi lengkap pada jaringan simulasi          | [ ] Melakukan pengujian penetrasi <br> [ ] Mengidentifikasi kerentanan yang ditemukan                                |
+|                      | 10                | Konfigurasi Alat                        | - Latihan konfigurasi alat-alat ethical hacking                      | [ ] Menyusun konfigurasi alat pengujian <br> [ ] Mengoptimalkan penggunaan alat                                      |
+|                      | 11                | Sertifikasi Ethical Hacking             | - Diskusi sertifikasi CEH, OSCP, dsb.                                | [ ] Memahami manfaat sertifikasi <br> [ ] Mengetahui persiapan yang diperlukan untuk sertifikasi                     |
+|                      | 12                | Tantangan dalam Dunia Nyata             | - Diskusi tantangan pengujian keamanan                                | [ ] Mengidentifikasi tantangan umum <br> [ ] Mampu mengajukan solusi untuk tiap tantangan                            |
+|                      | 13                | Tren Terbaru dalam Ethical Hacking      | - Diskusi teknik hacking terbaru                                      | [ ] Memahami evolusi teknik hacking <br> [ ] Mengenal ancaman baru dalam ethical hacking                             |
+|                      | 14                | Masa Depan Ethical Hacking              | - Diskusi peran masa depan dalam keamanan jaringan                   | [ ] Memahami perkembangan teknologi <br> [ ] Memprediksi perubahan teknik dan alat Ethical Hacking                   |
+|                      | 15                | Review dan Refleksi                     | - Diskusi kelompok dan refleksi individu                              | [ ] Mengikuti review materi <br> [ ] Mampu merangkum pemahaman secara tertulis                                       |
+|                      | 16                | Ujian Praktik Pengujian Penetrasi       | - Ujian praktik berdasarkan studi kasus                               | [ ] Melakukan ujian praktik <br> [ ] Memahami dan menganalisis hasil pengujian penetrasi                             |
+|                      | 17                | Ujian Teori                             | - Tes tertulis                                                       | [ ] Memahami konsep, teknik, dan alat dalam ethical hacking                                                         |
+|                      | 18                | Evaluasi Akhir dan Diskusi              | - Evaluasi pembelajaran                                              | [ ] Mengikuti diskusi akhir <br> [ ] Mampu menjawab pertanyaan evaluasi dengan pemahaman Ethical Hacking             |
+
+---
+
+### Lembar Penilaian Individu Ethical Hacking
+
+**Nama Siswa:**  
+**Pertemuan:**  
+
+| **Kriteria Penilaian**              | **Deskripsi Penilaian**                                                                                                        | **Skor (1-5)** |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------|
+| Pemahaman Konsep                    | Memahami dasar-dasar dan etika dalam Ethical Hacking                                                                            |                |
+| Kemampuan Analisis                  | Mengidentifikasi dan menganalisis kerentanan dalam jaringan simulasi                                                            |                |
+| Keaktifan dan Partisipasi           | Berpartisipasi aktif dalam diskusi kelompok dan kontribusi dalam setiap pertemuan                                               |                |
+| Penguasaan Alat                     | Dapat menggunakan alat seperti Metasploit, Burp Suite, dan Wireshark untuk pengujian keamanan                                   |                |
+| Penyelesaian Studi Kasus            | Mampu menyelesaikan studi kasus pengujian penetrasi dan mengidentifikasi risiko                                                 |                |
+| Refleksi dan Evaluasi Diri          | Menuliskan refleksi pemahaman dan melakukan evaluasi diri di akhir materi                                                       |                |
+| Persiapan dan Kesiapan Ujian        | Mempersiapkan diri dengan baik untuk ujian teori dan praktik                                                                    |                |
+| Kreativitas dan Pemecahan Masalah   | Mengajukan solusi dalam tantangan ethical hacking dalam dunia nyata                                                             |                |
+| Kualitas Hasil dan Efisiensi        | Menyusun konfigurasi alat secara efisien dan mengoptimalkan proses pengujian                                                    |                |
+| Kemampuan Beradaptasi dengan Tren   | Memahami tren terbaru dan mampu menyesuaikan teknik ethical hacking dengan perkembangan ancaman baru                            |                |
+
+**Catatan Pembimbing:**
+
+---
+
+
+---
+
+### 1. **Penilaian Proyek**
+   - **Deskripsi**: Penilaian ini berfokus pada proyek akhir yang mengharuskan siswa untuk merancang solusi keamanan jaringan berbasis konsep Ethical Hacking. Proyek dapat berupa simulasi atau studi kasus nyata yang melibatkan teknik pengujian penetrasi, analisis kerentanan, dan mitigasi risiko.
+   - **Tujuan**: Untuk menilai kemampuan siswa dalam mengaplikasikan seluruh konsep Ethical Hacking yang telah dipelajari secara menyeluruh, mulai dari tahap perencanaan hingga implementasi dan dokumentasi akhir.
+   - **Langkah-Langkah Penilaian**:
+     1. **Perencanaan**: Siswa membuat rencana yang mencakup analisis kebutuhan, identifikasi kerentanan, dan tujuan keamanan.
+     2. **Implementasi**: Siswa melakukan pengujian penetrasi atau simulasi serangan menggunakan alat seperti Metasploit atau Burp Suite.
+     3. **Dokumentasi**: Siswa mendokumentasikan langkah-langkah, hasil pengujian, dan rekomendasi mitigasi.
+   - **Aspek yang Dinilai**:
+     - Keakuratan dalam mengidentifikasi dan menganalisis kerentanan.
+     - Kualitas solusi keamanan yang diterapkan.
+     - Kemampuan dalam mendokumentasikan proses dan hasil dengan jelas.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Solusi komprehensif dengan dokumentasi sangat baik.
+     - **Skor 3**: Solusi baik, namun dokumentasi perlu sedikit perbaikan.
+     - **Skor 2**: Solusi cukup, tetapi dokumentasi kurang lengkap.
+     - **Skor 1**: Solusi dan dokumentasi kurang memadai.
+
+---
+
+### 2. **Penilaian Portofolio**
+   - **Deskripsi**: Portofolio adalah kumpulan tugas, hasil praktik, refleksi pribadi, dan proyek kecil yang telah diselesaikan sepanjang materi Ethical Hacking.
+   - **Tujuan**: Untuk melihat perkembangan dan pemahaman siswa terhadap konsep-konsep utama Ethical Hacking dari waktu ke waktu.
+   - **Komponen Penilaian**:
+     - **Hasil Praktik**: Hasil dari setiap praktik seperti pengujian penetrasi, analisis kerentanan, dan konfigurasi alat keamanan.
+     - **Refleksi Pribadi**: Catatan refleksi yang menunjukkan pemahaman siswa dan tantangan yang dihadapi.
+     - **Proyek Kecil dan Tugas**: Tugas praktikum seperti identifikasi kerentanan jaringan, eksplorasi alat keamanan, dll.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Portofolio sangat lengkap dan terstruktur, mencerminkan pemahaman mendalam.
+     - **Skor 3**: Portofolio lengkap dan terstruktur dengan baik.
+     - **Skor 2**: Portofolio cukup lengkap tetapi tidak terstruktur dengan baik.
+     - **Skor 1**: Portofolio kurang lengkap dan tidak terstruktur.
+
+---
+
+### 3. **Penilaian Peer Assessment (Penilaian Teman Sebaya)**
+   - **Deskripsi**: Penilaian ini melibatkan siswa untuk memberikan umpan balik dan menilai hasil kerja teman sekelas, terutama dalam tugas praktikum atau proyek kelompok.
+   - **Tujuan**: Untuk melatih siswa dalam memberikan umpan balik yang konstruktif serta meningkatkan keterampilan kolaborasi.
+   - **Langkah-Langkah Penilaian**:
+     1. Siswa diberikan panduan dalam menilai hasil kerja teman, termasuk aspek-aspek teknis dan etika.
+     2. Siswa memberikan umpan balik berdasarkan ketepatan dan kualitas hasil kerja.
+   - **Aspek yang Dinilai**:
+     - Kemampuan mengevaluasi hasil kerja teman dengan objektif.
+     - Kualitas umpan balik yang diberikan.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Umpan balik objektif dan sangat konstruktif.
+     - **Skor 3**: Umpan balik cukup baik dan objektif.
+     - **Skor 2**: Umpan balik kurang obyektif dan terbatas.
+     - **Skor 1**: Umpan balik tidak objektif dan minim.
+
+---
+
+### 4. **Penilaian Keterampilan Praktik Berbasis Kinerja (Performance-Based Assessment)**
+   - **Deskripsi**: Siswa dinilai berdasarkan keterampilan praktis yang ditunjukkan selama praktik seperti konfigurasi alat atau simulasi pengujian penetrasi.
+   - **Tujuan**: Mengukur kemampuan teknis siswa dalam situasi yang mendekati kondisi nyata, seperti kemampuan menggunakan Wireshark untuk analisis lalu lintas atau Metasploit untuk menemukan kerentanan.
+   - **Langkah-Langkah Penilaian**:
+     1. Siswa diberikan tugas praktikum dengan alat keamanan.
+     2. Instruktur menilai keterampilan teknis, ketepatan konfigurasi, dan ketepatan waktu dalam menyelesaikan tugas.
+   - **Aspek yang Dinilai**:
+     - Ketepatan dalam konfigurasi alat.
+     - Kemampuan menyelesaikan tugas dalam waktu yang ditetapkan.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Keterampilan sangat baik, dengan konfigurasi tepat dan efisien.
+     - **Skor 3**: Keterampilan baik, tetapi perlu sedikit perbaikan.
+     - **Skor 2**: Keterampilan cukup, tetapi kurang efisien.
+     - **Skor 1**: Keterampilan tidak memadai dan tugas tidak selesai.
+
+---
+
+### 5. **Penilaian Self-Assessment (Penilaian Diri Sendiri)**
+   - **Deskripsi**: Siswa diminta untuk menilai pemahaman dan kinerja mereka sendiri, terutama setelah menyelesaikan modul utama seperti pengujian penetrasi atau analisis kerentanan.
+   - **Tujuan**: Untuk membantu siswa melakukan refleksi diri mengenai pemahaman konsep Ethical Hacking dan area yang masih perlu ditingkatkan.
+   - **Langkah-Langkah Penilaian**:
+     1. Siswa mengisi lembar self-assessment dengan skala nilai dan catatan reflektif.
+     2. Siswa menilai pemahaman dan keterampilan mereka sendiri secara objektif.
+   - **Aspek yang Dinilai**:
+     - Kemampuan siswa dalam melakukan refleksi diri.
+     - Kesadaran akan kekuatan dan kelemahan pribadi.
+     - Kejelasan dalam mengidentifikasi area untuk perbaikan.
+   - **Rubrik Penilaian**:
+     - **Skor 4**: Refleksi diri sangat baik, menunjukkan kesadaran tinggi terhadap kemampuan dan area perbaikan.
+     - **Skor 3**: Refleksi cukup baik dan menunjukkan pemahaman yang jelas tentang area perbaikan.
+     - **Skor 2**: Refleksi kurang mendalam, tetapi menunjukkan keinginan untuk perbaikan.
+     - **Skor 1**: Refleksi minim tanpa rencana perbaikan.
+
+---
+
+Penilaian-penilaian ini memberikan perspektif menyeluruh mengenai kemampuan siswa dalam menguasai konsep dan keterampilan **Ethical Hacking** serta keterampilan reflektif, kolaborasi, dan pengembangan diri.
+
+
+Berikut adalah 40 soal pilihan ganda mengenai **Ethical Hacking** dengan 5 pilihan jawaban dan jawaban yang benar. Topik mencakup dasar-dasar Ethical Hacking, alat-alat, serta metodologi yang umum digunakan dalam bidang ini.
+
+---
+
+### 1. Apa tujuan utama dari ethical hacking?
+   - A. Menghancurkan jaringan perusahaan
+   - B. Mendapatkan keuntungan finansial
+   - C. Menguji dan memperbaiki keamanan sistem
+   - D. Mengakses informasi rahasia tanpa izin
+   - E. Merusak data perusahaan  
+   - **Jawaban: C**
+
+### 2. Teknik berikut yang TIDAK termasuk dalam ethical hacking adalah...
+   - A. Social engineering
+   - B. Phishing
+   - C. Analisis kerentanan
+   - D. Deface
+   - E. Eksploitasi sistem  
+   - **Jawaban: D**
+
+### 3. Dalam ethical hacking, serangan **DoS** bertujuan untuk...
+   - A. Mencuri data
+   - B. Menghentikan layanan
+   - C. Memperbaiki bug
+   - D. Menghapus data
+   - E. Mencari celah keamanan  
+   - **Jawaban: B**
+
+### 4. Alat yang paling sering digunakan untuk melakukan sniffing pada jaringan adalah...
+   - A. Metasploit
+   - B. Burp Suite
+   - C. Wireshark
+   - D. Nmap
+   - E. Cain & Abel  
+   - **Jawaban: C**
+
+### 5. Manakah yang bukan merupakan fase dari proses **ethical hacking**?
+   - A. Reconnaissance
+   - B. Scanning
+   - C. Exploitation
+   - D. Post-exploitation
+   - E. Debugging  
+   - **Jawaban: E**
+
+### 6. Alat berikut yang digunakan untuk pengujian penetrasi aplikasi web adalah...
+   - A. Wireshark
+   - B. Metasploit
+   - C. Burp Suite
+   - D. Nmap
+   - E. Nessus  
+   - **Jawaban: C**
+
+### 7. Istilah **pentesting** merujuk pada...
+   - A. Pemrograman perangkat lunak
+   - B. Pemulihan sistem
+   - C. Pengujian penetrasi
+   - D. Manajemen risiko
+   - E. Pemantauan jaringan  
+   - **Jawaban: C**
+
+### 8. Teknik berikut digunakan untuk mengidentifikasi port yang terbuka dalam jaringan:
+   - A. Port scanning
+   - B. Phishing
+   - C. Cracking
+   - D. Social engineering
+   - E. Malware injection  
+   - **Jawaban: A**
+
+### 9. Kelemahan atau celah dalam sistem keamanan dikenal sebagai...
+   - A. Malware
+   - B. Vulnerability
+   - C. Exploit
+   - D. Payload
+   - E. Shell  
+   - **Jawaban: B**
+
+### 10. Pada serangan **brute force**, seorang hacker mencoba...
+    - A. Mengubah alamat IP
+    - B. Membobol kata sandi
+    - C. Memindai jaringan
+    - D. Menggunakan alat keamanan
+    - E. Menganalisis jaringan  
+    - **Jawaban: B**
+
+### 11. Alat berikut yang sering digunakan untuk eksploitasi adalah...
+    - A. Burp Suite
+    - B. Wireshark
+    - C. Nmap
+    - D. Metasploit
+    - E. Nessus  
+    - **Jawaban: D**
+
+### 12. Teknik social engineering yang sering dilakukan melalui email adalah...
+    - A. Phishing
+    - B. Sniffing
+    - C. Spoofing
+    - D. Cracking
+    - E. Buffer overflow  
+    - **Jawaban: A**
+
+### 13. Alat berikut digunakan untuk scanning kerentanan jaringan:
+    - A. Metasploit
+    - B. Nmap
+    - C. Wireshark
+    - D. Burp Suite
+    - E. Snort  
+    - **Jawaban: B**
+
+### 14. Manakah yang merupakan tujuan utama dari post-exploitation?
+    - A. Menemukan kerentanan
+    - B. Melakukan eksploitasi
+    - C. Menghapus jejak
+    - D. Mengamankan akses yang telah didapatkan
+    - E. Membobol kata sandi  
+    - **Jawaban: D**
+
+### 15. Teknik yang sering digunakan untuk mengecoh pengguna agar memberikan informasi adalah...
+    - A. SQL injection
+    - B. Phishing
+    - C. Sniffing
+    - D. Keylogging
+    - E. Port scanning  
+    - **Jawaban: B**
+
+### 16. Alat berikut sering digunakan untuk mencari kerentanan dalam sistem:
+    - A. Nessus
+    - B. Burp Suite
+    - C. Wireshark
+    - D. Cain & Abel
+    - E. Telnet  
+    - **Jawaban: A**
+
+### 17. Alat berikut yang sering digunakan untuk meretas kata sandi adalah...
+    - A. Burp Suite
+    - B. Nmap
+    - C. Cain & Abel
+    - D. Metasploit
+    - E. Nessus  
+    - **Jawaban: C**
+
+### 18. Teknik berikut memungkinkan hacker untuk menyalin data yang dikirim melalui jaringan:
+    - A. Phishing
+    - B. Sniffing
+    - C. SQL injection
+    - D. Brute force
+    - E. Spoofing  
+    - **Jawaban: B**
+
+### 19. Manakah alat yang dapat menganalisis lalu lintas jaringan?
+    - A. Metasploit
+    - B. Nessus
+    - C. Burp Suite
+    - D. Wireshark
+    - E. Telnet  
+    - **Jawaban: D**
+
+### 20. Teknik yang digunakan untuk menggantikan alamat IP yang asli adalah...
+    - A. Spoofing
+    - B. Phishing
+    - C. SQL injection
+    - D. Brute force
+    - E. Port scanning  
+    - **Jawaban: A**
+
+### 21. Manakah dari berikut ini yang merupakan fase pertama dalam ethical hacking?
+    - A. Exploitation
+    - B. Scanning
+    - C. Reconnaissance
+    - D. Enumeration
+    - E. Spoofing  
+    - **Jawaban: C**
+
+### 22. Alat yang sering digunakan untuk pengujian keamanan aplikasi web adalah...
+    - A. Wireshark
+    - B. Metasploit
+    - C. Burp Suite
+    - D. Cain & Abel
+    - E. Telnet  
+    - **Jawaban: C**
+
+### 23. Istilah untuk perangkat lunak atau kode yang dirancang untuk mengambil alih komputer disebut...
+    - A. Malware
+    - B. Payload
+    - C. Exploit
+    - D. Vulnerability
+    - E. Keylogger  
+    - **Jawaban: A**
+
+### 24. Teknik hacking untuk mengirim permintaan jaringan palsu disebut...
+    - A. Phishing
+    - B. Sniffing
+    - C. Spoofing
+    - D. SQL injection
+    - E. Exploiting  
+    - **Jawaban: C**
+
+### 25. Teknik yang melibatkan penambahan kode berbahaya ke situs web disebut...
+    - A. Spoofing
+    - B. XSS (Cross-Site Scripting)
+    - C. Sniffing
+    - D. Port scanning
+    - E. Enumeration  
+    - **Jawaban: B**
+
+### 26. Apa fungsi utama dari alat Nmap?
+    - A. Menganalisis lalu lintas jaringan
+    - B. Mencari kerentanan jaringan
+    - C. Memecahkan kata sandi
+    - D. Membuat payload
+    - E. Membuat laporan keamanan  
+    - **Jawaban: B**
+
+### 27. Berikut adalah alasan utama untuk melakukan scanning pada jaringan...
+    - A. Menghapus data
+    - B. Melihat lalu lintas data
+    - C. Mengidentifikasi kerentanan
+    - D. Membuat payload
+    - E. Melakukan SQL injection  
+    - **Jawaban: C**
+
+### 28. Teknik yang digunakan untuk mencegah akses yang tidak sah pada sistem disebut...
+    - A. Firewall
+    - B. Phishing
+    - C. Social engineering
+    - D. SQL injection
+    - E. Sniffing  
+    - **Jawaban: A**
+
+### 29. Alat yang memungkinkan analisis paket data disebut...
+    - A. Metasploit
+    - B. Nessus
+    - C. Burp Suite
+    - D. Wireshark
+    - E. Cain & Abel  
+    - **Jawaban: D**
+
+### 30. Istilah "ethical hacking" berarti...
+    - A. Peretasan sistem tanpa izin
+    - B. Pengujian sistem dengan izin untuk tujuan keamanan
+    - C. Menyusup ke jaringan pemerintah
+    - D. Merusak data perusahaan
+    - E. Menginstal malware  
+    - **Jawaban: B**
+
+Berikut adalah 10 soal pilihan ganda terakhir mengenai **Ethical Hacking**:
+
+### 31. Istilah lain untuk pengujian penetrasi adalah...
+   - A. Debugging
+   - B. Vulnerability assessment
+   - C. Penetration testing
+   - D. Risk analysis
+   - E. System audit  
+   - **Jawaban: C**
+
+### 32. Apa yang dilakukan oleh alat **Metasploit**?
+   - A. Mengelola jaringan
+   - B. Menyediakan lingkungan pengujian penetrasi
+   - C. Memindai port yang terbuka
+   - D. Menganalisis lalu lintas jaringan
+   - E. Menghapus malware  
+   - **Jawaban: B**
+
+### 33. Manakah dari berikut ini yang merupakan contoh serangan **SQL injection**?
+   - A. Mengubah tampilan situs web
+   - B. Memasukkan kode SQL berbahaya melalui input pengguna
+   - C. Mengakses server melalui backdoor
+   - D. Mengirim email palsu
+   - E. Mengganti alamat IP  
+   - **Jawaban: B**
+
+### 34. Apa yang dimaksud dengan **buffer overflow**?
+   - A. Menghentikan layanan
+   - B. Mengisi memori yang tidak terpakai
+   - C. Serangan yang terjadi ketika lebih banyak data ditulis ke dalam buffer daripada yang dapat ditangani
+   - D. Memperoleh akses root
+   - E. Mengubah konfigurasi sistem  
+   - **Jawaban: C**
+
+### 35. Teknik yang digunakan untuk memperoleh informasi dari pengguna dengan cara yang menipu adalah...
+   - A. Scanning
+   - B. Sniffing
+   - C. Phishing
+   - D. Cracking
+   - E. Enumeration  
+   - **Jawaban: C**
+
+### 36. Manakah dari berikut ini yang merupakan alat untuk melakukan vulnerability scanning?
+   - A. Nmap
+   - B. Metasploit
+   - C. Nessus
+   - D. Wireshark
+   - E. Burp Suite  
+   - **Jawaban: C**
+
+### 37. Istilah untuk pengujian yang dilakukan secara rutin untuk memastikan keamanan sistem adalah...
+   - A. Penetration testing
+   - B. Red teaming
+   - C. Blue teaming
+   - D. Continuous testing
+   - E. Ethical hacking  
+   - **Jawaban: D**
+
+### 38. Alat yang dapat digunakan untuk mendeteksi dan mencegah intrusi adalah...
+   - A. Firewall
+   - B. Virus scanner
+   - C. Network sniffer
+   - D. Password cracker
+   - E. Network analyzer  
+   - **Jawaban: A**
+
+### 39. Apa yang dimaksud dengan **two-factor authentication** (2FA)?
+   - A. Penggunaan satu kata sandi
+   - B. Sistem yang hanya memerlukan username
+   - C. Memerlukan dua bentuk identifikasi untuk mengakses akun
+   - D. Enkripsi data
+   - E. Pengujian kerentanan  
+   - **Jawaban: C**
+
+### 40. Teknik di mana hacker menyusup ke sistem dan mengumpulkan informasi tanpa terdeteksi adalah...
+   - A. Active reconnaissance
+   - B. Passive reconnaissance
+   - C. Phishing
+   - D. Social engineering
+   - E. Denial of Service  
+   - **Jawaban: B**
+
+---
+
+Dengan 40 soal ini, Anda dapat mengevaluasi pemahaman siswa tentang konsep-konsep dasar dalam **Ethical Hacking**. Setiap soal dilengkapi dengan pilihan jawaban dan jawaban yang benar untuk memudahkan penilaian.
+```
