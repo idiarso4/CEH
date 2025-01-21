@@ -1,0 +1,273 @@
+# Buku Ajar: Pengantar Ethical Hacking
+
+## Kata Pengantar
+Buku ajar ini disusun untuk memenuhi kebutuhan pembelajaran di bidang keamanan siber, khususnya ethical hacking. Materi disajikan secara sistematis dan komprehensif untuk membantu peserta didik memahami konsep dasar hingga implementasi ethical hacking secara profesional.
+
+## Daftar Isi
+[Daftar isi lengkap dengan sub-bab dan halaman]
+
+## A. Deskripsi Materi
+Modul ini membahas konsep dasar ethical hacking, etika dan regulasi yang berlaku, serta metodologi dasar dalam ethical hacking. Materi dirancang untuk memberikan pemahaman fundamental tentang peran ethical hacking dalam keamanan siber.
+
+## B. Capaian Pembelajaran
+Setelah mempelajari modul ini, peserta didik diharapkan mampu:
+1. Memahami konsep dan prinsip dasar ethical hacking
+2. Membedakan jenis-jenis hacking dan perannya
+3. Mengidentifikasi aspek etika dan regulasi dalam ethical hacking
+4. Menjelaskan metodologi dasar ethical hacking
+
+## C. Materi Pembelajaran
+
+### 1. Pengantar Ethical Hacking
+#### 1.1 Definisi dan Konsep Dasar
+
+##### Pengertian Ethical Hacking
+Ethical Hacking adalah praktik mengidentifikasi kerentanan dan kelemahan keamanan dalam sistem komputer atau jaringan dengan izin resmi dari pemilik sistem. Tujuannya adalah untuk mengevaluasi dan meningkatkan keamanan sistem tersebut. Seorang ethical hacker menggunakan teknik dan tools yang sama dengan yang digunakan oleh hacker jahat (malicious hacker), namun dengan tujuan yang legal dan konstruktif.
+
+##### Sejarah Perkembangan Ethical Hacking
+1. **Era 1960-an**
+   - Awal mula istilah "hacking" di MIT
+   - Fokus pada eksplorasi dan optimasi sistem
+   - Komunitas hacker pertama terbentuk
+
+2. **Era 1970-an - 1980-an**
+   - Munculnya phone phreaking
+   - Berkembangnya personal computer
+   - Peningkatan kasus peretasan sistem
+
+3. **Era 1990-an**
+   - Internet mulai populer
+   - Kesadaran akan pentingnya keamanan siber
+   - Lahirnya profesi ethical hacker
+
+4. **Era 2000-an - Sekarang**
+   - Standardisasi profesi (CEH, OSCP, dll)
+   - Program bug bounty
+   - Pentingnya ethical hacking dalam cybersecurity
+
+5. **Era 2020-an**
+   - Perkembangan AI dalam ethical hacking
+   - Zero-trust security model
+   - Cloud security testing
+   - IoT security testing
+   - Blockchain security assessment
+
+##### Tujuan dan Manfaat Ethical Hacking
+1. **Tujuan**
+   - Mengidentifikasi kelemahan keamanan
+   - Menguji efektivitas kontrol keamanan
+   - Meningkatkan ketahanan sistem
+   - Mencegah serangan cyber
+   
+2. **Manfaat**
+   - Perlindungan data sensitif
+   - Pencegahan kerugian finansial
+   - Menjaga reputasi organisasi
+   - Kepatuhan terhadap regulasi
+   - Peningkatan awareness keamanan
+
+##### Perbedaan Ethical Hacking dengan Cyber Crime
+
+| Aspek | Ethical Hacking | Cyber Crime |
+|-------|----------------|-------------|
+| Legalitas | Legal dengan izin tertulis | Ilegal |
+| Tujuan | Meningkatkan keamanan | Merusak atau mencuri |
+| Metodologi | Terstruktur dan terdokumentasi | Tidak terstruktur |
+| Hasil | Laporan dan rekomendasi | Kerusakan dan kerugian |
+| Dampak | Positif bagi organisasi | Negatif bagi korban |
+
+##### Komponen Penting dalam Ethical Hacking
+1. **Izin dan Dokumentasi**
+   - Scope of Work (SoW)
+   - Non-Disclosure Agreement (NDA)
+   - Rules of Engagement (RoE)
+   
+2. **Metodologi**
+   - Pendekatan sistematis
+   - Framework standar
+   - Best practices
+   
+3. **Skill dan Pengetahuan**
+   - Networking
+   - Programming
+   - Operating Systems
+   - Security Tools
+   
+4. **Etika dan Profesionalisme**
+   - Kode etik
+   - Tanggung jawab
+   - Batasan legal
+
+5. **Tools dan Teknologi**
+   - Operating Systems
+     * Kali Linux
+     * Parrot Security OS
+     * BlackArch Linux
+   
+   - Network Analysis Tools
+     * Wireshark
+     * Nmap
+     * Netcat
+   
+   - Vulnerability Assessment Tools
+     * Nessus
+     * OpenVAS
+     * Acunetix
+   
+   - Exploitation Frameworks
+     * Metasploit
+     * Canvas
+     * Core Impact
+
+6. **Documentation and Reporting**
+   - Report Templates
+   - Risk Assessment Matrices
+   - Remediation Guidelines
+   - Executive Summary Formats
+
+#### 1.2 Jenis-jenis Hacker
+- White Hat Hacker (Ethical Hacker)
+  * Karakteristik dan peran
+  * Contoh aktivitas
+  * Sertifikasi dan karir
+  
+- Black Hat Hacker
+  * Karakteristik dan motivasi
+  * Dampak negatif
+  * Contoh kasus
+  
+- Grey Hat Hacker
+  * Karakteristik dan posisi
+  * Dilema etis
+  * Studi kasus
+
+- Script Kiddies
+  * Karakteristik
+  * Risiko dan ancaman
+  * Pencegahan
+
+- State-Sponsored Hackers
+  * Karakteristik
+  * Motivasi politik
+  * Impact global
+  * Case studies
+
+### 2. Etika dan Regulasi
+#### 2.1 Kode Etik Ethical Hacking
+- Prinsip-prinsip dasar
+- Tanggung jawab profesional
+- Batasan dan limitasi
+- Best practices
+
+**Prinsip-prinsip Dasar:**
+1. Confidentiality
+   - Data protection
+   - Information handling
+   - Privacy concerns
+
+2. Integrity
+   - Data accuracy
+   - System integrity
+   - Testing boundaries
+
+3. Availability
+   - Service continuity
+   - Resource management
+   - Impact minimization
+
+#### 2.2 Regulasi dan Hukum
+- UU ITE dan ethical hacking
+- Regulasi internasional
+- Izin dan dokumentasi legal
+- Sanksi pelanggaran
+
+### 3. Metodologi Ethical Hacking
+#### 3.1 Tahap Perencanaan
+- Penentuan scope
+- Pengumpulan informasi awal
+- Analisis risiko
+- Persiapan tools dan resources
+
+#### 3.2 Tahap Pelaksanaan
+1. **Reconnaissance**
+   - Passive reconnaissance
+   - Active reconnaissance
+   - Tools dan teknik
+   
+2. **Scanning**
+   - Network scanning
+   - Vulnerability scanning
+   - Port scanning
+   
+3. **Gaining Access**
+   - Teknik penetrasi
+   - Exploit development
+   - Password cracking
+   
+4. **Maintaining Access**
+   - Backdoor
+   - Rootkit
+   - Privilege escalation
+   
+5. **Covering Tracks**
+   - Log cleaning
+   - Evidence removal
+   - Stealth techniques
+
+### 4. Implementasi dan Studi Kasus
+#### 4.1 Tools Ethical Hacking
+- Network scanning tools
+- Vulnerability assessment tools
+- Penetration testing tools
+- Security assessment frameworks
+
+#### 4.2 Studi Kasus
+- Kasus ethical hacking di Indonesia
+- Success stories
+- Lessons learned
+- Best practices
+
+## Latihan dan Praktikum
+
+### Lab 1: Reconnaissance
+**Tujuan:** Memahami teknik pengumpulan informasi secara pasif
+**Tools:** 
+- WHOIS
+- Google Dorks
+- Shodan
+- theHarvester
+
+**Langkah-langkah:**
+1. [Instruksi detail]
+2. [Screenshot dan penjelasan]
+3. [Tips dan troubleshooting]
+
+### Lab 2: Network Scanning
+[Detail lab practice]
+
+## Studi Kasus
+
+### Kasus 1: Web Application Security Assessment
+**Skenario:** Sebuah e-commerce mengalami kebocoran data pelanggan
+**Analisis:**
+- Root cause
+- Impact assessment
+- Mitigation steps
+- Lessons learned
+
+[Tambahkan kasus-kasus lain]
+
+## Glosarium
+[Daftar istilah teknis dan definisinya]
+
+## Indeks
+[Daftar kata kunci dan halaman referensi]
+
+## Daftar Pustaka
+[Referensi lengkap dengan format akademis]
+
+## Lampiran
+A. Templates Dokumentasi
+B. Checklist Ethical Hacking
+C. Sample Reports
+D. Legal Documents
